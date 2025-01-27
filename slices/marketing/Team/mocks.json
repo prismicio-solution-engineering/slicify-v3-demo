@@ -1,0 +1,572 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Learn from the experts on the cutting-edge of deception at the most sinister companies.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"team_group_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Team"
+			},
+			"team_members": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Chelsea Hagon"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Senior Developer"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85&rect=0,919,3674,3674&w=560&h=560",
+									"alt": "woman in beige see-through top",
+									"origin": {
+										"id": "3ujVzg9i2EI",
+										"url": "https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85",
+										"width": 3674,
+										"height": 5511
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 919
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Emma Dorsey"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Senior Designer"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdHxlbnwwfHx8fDE3Mjc5MzkzNDh8MA&ixlib=rb-4.0.3&q=85&rect=0,410,3276,3276&w=560&h=560",
+									"alt": "woman wearing black crew-neck shirt",
+									"origin": {
+										"id": "3TLl_97HNJo",
+										"url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdHxlbnwwfHx8fDE3Mjc5MzkzNDh8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3276,
+										"height": 4096
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 410
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Leonard Krasner"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "VP, User Experience"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1509305717900-84f40e786d82?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNHx8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85&rect=243%2C1425%2C3347%2C3347&w=560&h=560",
+									"alt": "man wearing white button-up shirt",
+									"origin": {
+										"id": "hAMJpesMeDE",
+										"url": "https://images.unsplash.com/photo-1509305717900-84f40e786d82?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNHx8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85",
+										"width": 4000,
+										"height": 4960
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1.1949999999999998,
+										"crop": {
+											"x": 243,
+											"y": 1425
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Blake Reid"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "VP, Human Resources"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxN3x8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85&rect=0%2C214%2C3744%2C3744&w=560&h=560",
+									"alt": "man's grey and black shirt",
+									"origin": {
+										"id": "ILip77SbmOE",
+										"url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxN3x8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85",
+										"width": 3744,
+										"height": 5616
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 214
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Whitney Francis"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Content Specialist"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdHxlbnwwfHx8fDE3Mjc5MzkzNDh8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3527,3527&w=560&h=560",
+									"alt": "a woman with an afro is looking at the camera",
+									"origin": {
+										"id": "_cvwXhGqG-o",
+										"url": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdHxlbnwwfHx8fDE3Mjc5MzkzNDh8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3527,
+										"height": 3527
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Jeffrey Webb"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Account Coordinator"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85&rect=0,0,3220,3220&w=560&h=560",
+									"alt": "grayscale photo of man",
+									"origin": {
+										"id": "XHVpWcr5grQ",
+										"url": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85",
+										"width": 3220,
+										"height": 3220
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Benjamin Russel"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Senior Developer"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdHxlbnwwfHx8fDE3Mjc5MzkzNDh8MA&ixlib=rb-4.0.3&q=85&rect=0%2C303%2C3000%2C3000&w=560&h=560",
+									"alt": "man wearing Henley top portrait",
+									"origin": {
+										"id": "7YVZYZeITc8",
+										"url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdHxlbnwwfHx8fDE3Mjc5MzkzNDh8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3000,
+										"height": 4499
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 303
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Angela Fisher"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Front-end Developer"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1611567149282-baf74270f0b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTcyNzkzOTMxOHww&ixlib=rb-4.0.3&q=85&rect=0%2C217%2C3900%2C3900&w=560&h=560",
+									"alt": "woman in black coat standing on snow covered ground during daytime",
+									"origin": {
+										"id": "abe5NW1aqvw",
+										"url": "https://images.unsplash.com/photo-1611567149282-baf74270f0b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTcyNzkzOTMxOHww&ixlib=rb-4.0.3&q=85",
+										"width": 3900,
+										"height": 5261
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1.0000000000000002,
+										"crop": {
+											"x": 0,
+											"y": 217
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			},
+			"board_group_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Board"
+			},
+			"board_members": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Michelle"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "CEO"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdHxlbnwwfHx8fDE3Mjc5MzkzNDh8MA&ixlib=rb-4.0.3&q=85&rect=419,0,2975,2975&w=560&h=560",
+									"alt": "grayscale photo of woman wearing necklace and top",
+									"origin": {
+										"id": "0fN7Fxv1eWA",
+										"url": "https://images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdHxlbnwwfHx8fDE3Mjc5MzkzNDh8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3813,
+										"height": 2975
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 419,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Michel"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "CTO"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNXx8cG9ydHJhaXQlMjBibGFjayUyMG1hbnxlbnwwfHx8fDE3Mjc5Mzk1NzF8MA&ixlib=rb-4.0.3&q=85&rect=0,1000,4000,4000&w=560&h=560",
+									"alt": "smiling man wearing black turtleneck shirt holding camrea",
+									"origin": {
+										"id": "4Yv84VgQkRM",
+										"url": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNXx8cG9ydHJhaXQlMjBibGFjayUyMG1hbnxlbnwwfHx8fDE3Mjc5Mzk1NzF8MA&ixlib=rb-4.0.3&q=85",
+										"width": 4000,
+										"height": 6000
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 1000
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Michael"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Partnerships and Business Relations"
+								}
+							],
+							[
+								"member_picture",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1500832333538-837287aad2b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMnx8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85&rect=0%2C157%2C3330%2C3330&w=560&h=560",
+									"alt": "grayscale photography of portrait man",
+									"origin": {
+										"id": "LkQHGSVzfsk",
+										"url": "https://images.unsplash.com/photo-1500832333538-837287aad2b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMnx8cG9ydHJhaXR8ZW58MHx8fHwxNzI3OTM5MzQ4fDA&ixlib=rb-4.0.3&q=85",
+										"width": 3330,
+										"height": 4996
+									},
+									"width": 560,
+									"height": 560,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1.0000000000000002,
+										"crop": {
+											"x": 0,
+											"y": 157
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "About us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

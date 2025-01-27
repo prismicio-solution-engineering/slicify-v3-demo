@@ -1,0 +1,175 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Slices made simple for all businesses",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 7,
+									"end": 18
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "From Figma components to Javascript components to reusable website sections. Bring your website builder to life with Slices.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"anchor": {
+				"__TYPE__": "FieldContent",
+				"value": "empty",
+				"type": "Text"
+			},
+			"test": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": []
+					}
+				]
+			},
+			"buttons": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"cta_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Hello"
+								}
+							],
+							[
+								"cta_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Primary",
+									"type": "Select"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"cta_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Goodbye"
+								}
+							],
+							[
+								"cta_type",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "Secondary"
+								}
+							]
+						]
+					}
+				]
+			},
+			"theme": {
+				"__TYPE__": "FieldContent",
+				"value": "Blue",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"cta_label",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "show",
+							"type": "Text"
+						}
+					],
+					[
+						"cta_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					],
+					[
+						"cta_type",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "Secondary",
+							"type": "Select"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "titleOnly",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Slices made simple for all businesses",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 7,
+									"end": 18
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"theme": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Blue"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

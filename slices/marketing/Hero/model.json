@@ -1,0 +1,137 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Hero",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "White",
+              "Dark",
+              "Light",
+              "Blue"
+            ],
+            "default_value": "White"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1,strong"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,hyperlink"
+          }
+        },
+        "anchor": {
+          "type": "Text",
+          "config": {
+            "label": "anchor",
+            "placeholder": "optional"
+          }
+        },
+        "buttons": {
+          "type": "Group",
+          "config": {
+            "label": "Buttons",
+            "repeat": true,
+            "fields": {
+              "cta_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Cta Label",
+                  "placeholder": ""
+                }
+              },
+              "cta_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Cta Link",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "select": null
+                }
+              },
+              "cta_type": {
+                "type": "Select",
+                "config": {
+                  "label": "Cta Type",
+                  "placeholder": "",
+                  "options": [
+                    "Primary",
+                    "Secondary",
+                    "Text"
+                  ],
+                  "default_value": "Primary"
+                }
+              }
+            }
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "items": {}
+    },
+    {
+      "id": "titleOnly",
+      "name": "Title Only",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Hero",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "White",
+              "Dark",
+              "Light",
+              "Blue"
+            ],
+            "default_value": "White"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1,strong"
+          }
+        },
+        "anchor": {
+          "type": "Text",
+          "config": {
+            "label": "anchor",
+            "placeholder": "optional"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

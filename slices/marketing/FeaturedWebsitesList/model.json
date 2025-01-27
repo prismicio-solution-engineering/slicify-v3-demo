@@ -1,0 +1,124 @@
+{
+  "id": "featured_websites_list",
+  "type": "SharedSlice",
+  "name": "FeaturedWebsitesList",
+  "description": "FeaturedWebsitesList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "White",
+              "Dark",
+              "Light",
+              "Blue"
+            ],
+            "default_value": "White"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,strong"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "websites": {
+          "type": "Group",
+          "config": {
+            "label": "Websites",
+            "repeat": true,
+            "fields": {
+              "website": {
+                "type": "IntegrationFields",
+                "config": {
+                  "catalog": "slicify--prismic_websites",
+                  "label": "Prismic websites"
+                }
+              }
+            }
+          }
+        },
+        "anchor": {
+          "type": "Text",
+          "config": {
+            "label": "anchor",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "autoList",
+      "name": "Auto List",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "White",
+              "Dark",
+              "Light",
+              "Blue"
+            ],
+            "default_value": "White"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,strong"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "anchor": {
+          "type": "Text",
+          "config": {
+            "label": "anchor",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withDetails",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Enter your email"
+			},
+			"subscribe_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Subscribe"
+			},
+			"disclaimer": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We care about your data. Read our privacy policy.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Subscribe to our newsletter.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"content": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Weekly articles",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1528821099448-43ccebfbb899?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaGVycnl8ZW58MHx8fHwxNzI2MDQ4Mzk0fDA&ixlib=rb-4.0.3&q=85&rect=886,0,3543,3543&w=128&h=128",
+									"alt": "two red cherry fruits on white surface",
+									"origin": {
+										"id": "nqLX3lIV7C0",
+										"url": "https://images.unsplash.com/photo-1528821099448-43ccebfbb899?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaGVycnl8ZW58MHx8fHwxNzI2MDQ4Mzk0fDA&ixlib=rb-4.0.3&q=85",
+										"width": 5314,
+										"height": 3543
+									},
+									"width": 128,
+									"height": 128,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 886,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "No spam",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1528821099448-43ccebfbb899?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaGVycnl8ZW58MHx8fHwxNzI2MDQ4Mzk0fDA&ixlib=rb-4.0.3&q=85&rect=886,0,3543,3543&w=128&h=128",
+									"alt": "two red cherry fruits on white surface",
+									"origin": {
+										"id": "nqLX3lIV7C0",
+										"url": "https://images.unsplash.com/photo-1528821099448-43ccebfbb899?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaGVycnl8ZW58MHx8fHwxNzI2MDQ4Mzk0fDA&ixlib=rb-4.0.3&q=85",
+										"width": 5314,
+										"height": 3543
+									},
+									"width": 128,
+									"height": 128,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 886,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "simple",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Want product news and updates?",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sign up for our newsletter.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Enter your email"
+			},
+			"subscribe_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Subscribe"
+			},
+			"disclaimer": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We care about your data. Read our privacy policy.",
+							"spans": [
+								{
+									"type": "hyperlink",
+									"start": 42,
+									"end": 48,
+									"data": {
+										"__TYPE__": "ExternalLink",
+										"url": "prismic.io",
+										"target": "_blank"
+									}
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"theme": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Blue"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "centered",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Enter your email"
+			},
+			"subscribe_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Subscribe"
+			},
+			"disclaimer": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We care about your data. Read our privacy policy.",
+							"spans": [
+								{
+									"type": "hyperlink",
+									"start": 42,
+									"end": 48,
+									"data": {
+										"__TYPE__": "ExternalLink",
+										"url": "prismic.io",
+										"target": "_blank"
+									}
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Get notified when we’re launching.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"theme": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Blue"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]
