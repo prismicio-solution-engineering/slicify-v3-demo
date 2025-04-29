@@ -36,7 +36,10 @@
               "config": {
                 "label": "Link",
                 "placeholder": "",
-                "select": null
+                "select": null,
+                "allowText": true,
+                "allowTargetBlank": true,
+                "variants": ["Text", "Button"]
               }
             },
             "anchor": {
@@ -77,7 +80,10 @@
               "config": {
                 "label": "Link",
                 "placeholder": "",
-                "select": null
+                "select": null,
+                "allowText": true,
+                "allowTargetBlank": true,
+                "variants": ["Text", "Button"]
               }
             },
             "anchor": {

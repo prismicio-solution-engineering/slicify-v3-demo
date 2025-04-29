@@ -546,7 +546,13 @@ export interface HeaderDocumentDataLeftSideLinksItem {
    * - **API ID Path**: header.left_side_links[].link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+  link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    "Text" | "Button"
+  >;
 
   /**
    * Anchor field in *Header → Left Side Links*
@@ -592,7 +598,13 @@ export interface HeaderDocumentDataRightSideLinksItem {
    * - **API ID Path**: header.right_side_links[].link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+  link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    "Text" | "Button"
+  >;
 
   /**
    * Anchor field in *Header → Right Side Links*
