@@ -33,7 +33,7 @@ const variantStyles: clsxT.ClassDictionary = {
 };
 
 export function Button({
-  // variant = "solid",
+  variation = "solid",
   color = "slate",
   className,
   href = "#",
@@ -43,7 +43,7 @@ export function Button({
   button,
   ...props
 }: {
-  // variant?: string;
+  variation?: string;
   color?: string;
   className?: string;
   children?: React.ReactNode;
@@ -54,11 +54,11 @@ export function Button({
   button?: boolean;
 }) {
   const variant =
-    field?.variant === "Primary"
+    field?.variant === "Primary" || variation === "Primary"
       ? "solid"
-      : field?.variant === "Secondary"
+      : field?.variant === "Secondary" || variation === "Secondary"
       ? "outline"
-      : field?.variant === "Text"
+      : field?.variant === "Text" || variation === "Text"
       ? "link"
       : "solid";
 
