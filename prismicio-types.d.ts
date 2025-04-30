@@ -1233,7 +1233,7 @@ export interface CallToActionSliceDefaultPrimary {
     string,
     unknown,
     prismic.FieldState,
-    never
+    "Primary" | "Secondary" | "Text"
   >;
 
   /**
@@ -1326,6 +1326,24 @@ export interface CallToActionSliceWithImageRightPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   anchor: prismic.KeyTextField;
+
+  /**
+   * Cta Link field in *CallToAction → With Image Right → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageRight.primary.cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.Repeatable<
+    prismic.LinkField<
+      string,
+      string,
+      unknown,
+      prismic.FieldState,
+      "Primary" | "Secondary" | "Text"
+    >
+  >;
 }
 
 /**
@@ -1396,6 +1414,24 @@ export interface CallToActionSliceWithImageLeftPrimary {
    */
   buttons: prismic.GroupField<
     Simplify<CallToActionSliceWithImageLeftPrimaryButtonsItem>
+  >;
+
+  /**
+   * Cta Link field in *CallToAction → With Image Left → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageLeft.primary.cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.Repeatable<
+    prismic.LinkField<
+      string,
+      string,
+      unknown,
+      prismic.FieldState,
+      "Primary" | "Secondary" | "Text"
+    >
   >;
 
   /**

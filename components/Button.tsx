@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { PrismicLink } from "@prismicio/react";
 import type * as prismic from "@prismicio/client";
 import type * as clsxT from "clsx";
+import { PrismicNextLink } from "@prismicio/next";
 
 const baseStyles: clsxT.ClassDictionary = {
   solid:
@@ -32,7 +33,7 @@ const variantStyles: clsxT.ClassDictionary = {
 };
 
 export function Button({
-  variant = "solid",
+  // variant = "solid",
   color = "slate",
   className,
   href = "#",
@@ -42,7 +43,7 @@ export function Button({
   button,
   ...props
 }: {
-  variant?: string;
+  // variant?: string;
   color?: string;
   className?: string;
   children?: React.ReactNode;
@@ -52,6 +53,15 @@ export function Button({
   submit?: boolean;
   button?: boolean;
 }) {
+  const variant =
+    field?.variant === "Primary"
+      ? "solid"
+      : field?.variant === "Secondary"
+      ? "outline"
+      : field?.variant === "Text"
+      ? "link"
+      : "solid";
+
   className = clsx(
     baseStyles[variant],
     variantStyles[variant][color],
@@ -67,12 +77,12 @@ export function Button({
   }
 
   if (field) {
-    return <PrismicLink className={className} {...props} field={field} />;
+    return <PrismicNextLink className={className} {...props} field={field} />;
   }
 
   return document ? (
-    <PrismicLink className={className} {...props} document={document} />
+    <PrismicNextLink className={className} {...props} document={document} />
   ) : (
-    <PrismicLink className={className} {...props} href={href} />
+    <PrismicNextLink className={className} {...props} href={href} />
   );
 }
