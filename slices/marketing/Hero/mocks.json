@@ -1,42 +1,6 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "titleOnly",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "Slices made simple for all businesses",
-							"spans": [
-								{
-									"type": "strong",
-									"start": 7,
-									"end": 18
-								}
-							]
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"theme": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Blue"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
 			"title": {
@@ -85,53 +49,6 @@
 					}
 				]
 			},
-			"buttons": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"cta_label",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Hello"
-								}
-							],
-							[
-								"cta_type",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "Primary",
-									"type": "Select"
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"cta_label",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Goodbye"
-								}
-							],
-							[
-								"cta_type",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "Secondary"
-								}
-							]
-						]
-					}
-				]
-			},
 			"theme": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
@@ -142,8 +59,8 @@
 				"type": "Link",
 				"value": [
 					{
-						"__TYPE__": "LinkContent",
 						"key": "38e0e55c-d82b-46b7-8c10-5b8854f40bc4",
+						"__TYPE__": "LinkContent",
 						"value": {
 							"__TYPE__": "AnyLink",
 							"kind": "any",
@@ -151,8 +68,8 @@
 						}
 					},
 					{
-						"__TYPE__": "LinkContent",
 						"key": "4d6b4ea4-0ce7-4c3a-a85c-507fbf8cdff4",
+						"__TYPE__": "LinkContent",
 						"value": {
 							"__TYPE__": "AnyLink",
 							"kind": "any",
@@ -195,6 +112,42 @@
 						}
 					]
 				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "titleOnly",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Slices made simple for all businesses",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 7,
+									"end": 18
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"theme": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Blue"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
 			}
 		]
 	}

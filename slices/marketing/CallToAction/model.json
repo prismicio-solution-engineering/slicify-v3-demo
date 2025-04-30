@@ -43,13 +43,6 @@
             "multi": "paragraph,strong"
           }
         },
-        "cta_label": {
-          "type": "Text",
-          "config": {
-            "label": "Cta Label",
-            "placeholder": ""
-          }
-        },
         "cta_link": {
           "type": "Link",
           "config": {
@@ -115,61 +108,6 @@
             "multi": "paragraph,strong"
           }
         },
-        "featured_image": {
-          "type": "Image",
-          "config": {
-            "label": "Featured Image",
-            "constraint": {
-              "width": 912,
-              "height": 615
-            },
-            "thumbnails": []
-          }
-        },
-        "buttons": {
-          "type": "Group",
-          "config": {
-            "label": "Buttons",
-            "repeat": true,
-            "fields": {
-              "cta_label": {
-                "type": "Text",
-                "config": {
-                  "label": "Cta Label",
-                  "placeholder": ""
-                }
-              },
-              "cta_link": {
-                "type": "Link",
-                "config": {
-                  "label": "Cta Link",
-                  "placeholder": "",
-                  "allowTargetBlank": false,
-                  "select": null
-                }
-              },
-              "cta_type": {
-                "type": "Select",
-                "config": {
-                  "label": "Cta Type",
-                  "placeholder": "",
-                  "options": [
-                    "Primary",
-                    "Secondary",
-                    "Text"
-                  ]
-                }
-              }
-            }
-          }
-        },
-        "anchor": {
-          "type": "Text",
-          "config": {
-            "label": "anchor",
-            "placeholder": "optional"
-          }
-        },
         "cta_link": {
           "type": "Link",
           "config": {
@@ -184,6 +122,24 @@
               "Secondary",
               "Text"
             ]
+          }
+        },
+        "featured_image": {
+          "type": "Image",
+          "config": {
+            "label": "Featured Image",
+            "constraint": {
+              "width": 912,
+              "height": 615
+            },
+            "thumbnails": []
+          }
+        },
+        "anchor": {
+          "type": "Text",
+          "config": {
+            "label": "anchor",
+            "placeholder": "optional"
           }
         }
       },
@@ -229,54 +185,6 @@
             "multi": "paragraph,strong"
           }
         },
-        "featured_image": {
-          "type": "Image",
-          "config": {
-            "label": "Featured Image",
-            "constraint": {
-              "width": 1824,
-              "height": 1080
-            },
-            "thumbnails": []
-          }
-        },
-        "buttons": {
-          "type": "Group",
-          "config": {
-            "label": "Buttons",
-            "repeat": true,
-            "fields": {
-              "cta_label": {
-                "type": "Text",
-                "config": {
-                  "label": "Cta Label",
-                  "placeholder": ""
-                }
-              },
-              "cta_link": {
-                "type": "Link",
-                "config": {
-                  "label": "Cta Link",
-                  "placeholder": "",
-                  "allowTargetBlank": false,
-                  "select": null
-                }
-              },
-              "cta_type": {
-                "type": "Select",
-                "config": {
-                  "label": "Cta Type",
-                  "placeholder": "",
-                  "options": [
-                    "Primary",
-                    "Secondary",
-                    "Text"
-                  ]
-                }
-              }
-            }
-          }
-        },
         "cta_link": {
           "type": "Link",
           "config": {
@@ -291,6 +199,17 @@
               "Secondary",
               "Text"
             ]
+          }
+        },
+        "featured_image": {
+          "type": "Image",
+          "config": {
+            "label": "Featured Image",
+            "constraint": {
+              "width": 1824,
+              "height": 1080
+            },
+            "thumbnails": []
           }
         },
         "anchor": {
