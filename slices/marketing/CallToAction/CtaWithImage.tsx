@@ -64,20 +64,18 @@ export default function CtaWithImage({
             <div className="mt-10 lg:flex justify-start gap-x-6">
               {slice.primary.cta_link.map((link) => {
                 return link.variant === "Secondary" ? (
-                  <Button key={link.key} field={link}>
+                  <Button
+                    key={link.key}
+                    field={link}
+                    color={themeColor === "dark" ? "white" : "slate"}
+                  >
                     <svg
                       aria-hidden="true"
                       className="h-3 w-3 flex-none fill-light-blue group-active:fill-current"
                     >
                       <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
                     </svg>
-                    <span
-                      className={`ml-3 ${
-                        themeColor === "dark" && "text-white"
-                      }`}
-                    >
-                      {link.text}
-                    </span>
+                    <span className="ml-3">{link.text}</span>
                   </Button>
                 ) : (
                   <Button

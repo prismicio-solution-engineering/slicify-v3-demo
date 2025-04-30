@@ -22,9 +22,9 @@ const variantStyles: clsxT.ClassDictionary = {
   },
   outline: {
     slate:
-      "ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300",
+      "ring-slate-700 text-slate-700 hover:text-slate-900 hover:ring-slate-700 active:bg-slate-400 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-700",
     white:
-      "ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white",
+      "ring-slate-200 text-white hover:ring-slate-500 active:ring-slate-300 active:text-slate-100 focus-visible:outline-white",
   },
   link: {
     slate: "text-slate-700 hover:text-slate-900",
