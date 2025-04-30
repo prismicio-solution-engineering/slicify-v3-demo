@@ -71,18 +71,9 @@ export default function Hero({ slice }: HeroProps) {
                 }}
               />
               <div className="mt-10 flex justify-center gap-x-6">
-                {slice.primary.buttons?.map((item, idx) => {
-                  return item.cta_type === "Primary" ? (
-                    <Button
-                      key={idx}
-                      field={item.cta_link}
-                      variant="solid"
-                      color={`${themeColor === "dark" ? "white" : "slate"}`}
-                    >
-                      {item.cta_label}
-                    </Button>
-                  ) : item.cta_type === "Secondary" ? (
-                    <Button key={idx} field={item.cta_link} variant="outline">
+                {slice.primary.cta_link.map((link) => {
+                  return link.variant === "Secondary" ? (
+                    <Button key={link.key} field={link}>
                       <svg
                         aria-hidden="true"
                         className="h-3 w-3 flex-none fill-light-blue group-active:fill-current"
@@ -94,22 +85,15 @@ export default function Hero({ slice }: HeroProps) {
                           themeColor === "dark" && "text-white"
                         }`}
                       >
-                        {item.cta_label}
+                        {link.text}
                       </span>
                     </Button>
                   ) : (
                     <Button
-                      key={idx}
-                      field={item.cta_link}
-                      variant="link"
-                      color={`${themeColor === "dark" ? "white" : "slate"}`}
-                    >
-                      <span
-                        className={`${themeColor === "dark" && "text-white"}`}
-                      >
-                        {item.cta_label}
-                      </span>
-                    </Button>
+                      key={link.key}
+                      field={link}
+                      color={themeColor === "dark" ? "white" : "blue"}
+                    />
                   );
                 })}
               </div>

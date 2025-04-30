@@ -1,6 +1,42 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
+		"variation": "titleOnly",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Slices made simple for all businesses",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 7,
+									"end": 18
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"theme": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Blue"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
 			"title": {
@@ -98,8 +134,33 @@
 			},
 			"theme": {
 				"__TYPE__": "FieldContent",
-				"value": "Blue",
-				"type": "Select"
+				"type": "Select",
+				"value": "Light"
+			},
+			"cta_link": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"__TYPE__": "LinkContent",
+						"key": "38e0e55c-d82b-46b7-8c10-5b8854f40bc4",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": "Hello"
+						}
+					},
+					{
+						"__TYPE__": "LinkContent",
+						"key": "4d6b4ea4-0ce7-4c3a-a85c-507fbf8cdff4",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": "Hello",
+							"variant": "Secondary"
+						}
+					}
+				]
 			}
 		},
 		"items": [
@@ -117,6 +178,7 @@
 					[
 						"cta_link",
 						{
+							"key": "83374bd3-d841-4f1c-872e-51cc487c4afc",
 							"__TYPE__": "LinkContent",
 							"value": {
 								"__TYPE__": "ExternalLink",
@@ -133,42 +195,6 @@
 						}
 					]
 				]
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "titleOnly",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "Slices made simple for all businesses",
-							"spans": [
-								{
-									"type": "strong",
-									"start": 7,
-									"end": 18
-								}
-							]
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"theme": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Blue"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
 			}
 		]
 	}

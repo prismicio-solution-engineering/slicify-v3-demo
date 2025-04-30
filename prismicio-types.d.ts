@@ -2827,6 +2827,24 @@ export interface HeroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   buttons: prismic.GroupField<Simplify<HeroSliceDefaultPrimaryButtonsItem>>;
+
+  /**
+   * Cta Link field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.Repeatable<
+    prismic.LinkField<
+      string,
+      string,
+      unknown,
+      prismic.FieldState,
+      "Primary" | "Secondary" | "Text"
+    >
+  >;
 }
 
 /**
