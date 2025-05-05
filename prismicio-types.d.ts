@@ -1094,6 +1094,88 @@ export type ArticleListSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Item in *CallToAction → With Image Right → Primary → Buttons*
+ */
+export interface CallToActionSliceWithImageRightPrimaryButtonsItem {
+  /**
+   * Cta Label field in *CallToAction → With Image Right → Primary → Buttons*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageRight.primary.buttons[].cta_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  cta_label: prismic.KeyTextField;
+
+  /**
+   * Cta Link field in *CallToAction → With Image Right → Primary → Buttons*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageRight.primary.buttons[].cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
+
+  /**
+   * Cta Type field in *CallToAction → With Image Right → Primary → Buttons*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageRight.primary.buttons[].cta_type
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  cta_type: prismic.SelectField<"Primary" | "Secondary" | "Text">;
+}
+
+/**
+ * Item in *CallToAction → With Image Left → Primary → Buttons*
+ */
+export interface CallToActionSliceWithImageLeftPrimaryButtonsItem {
+  /**
+   * Cta Label field in *CallToAction → With Image Left → Primary → Buttons*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageLeft.primary.buttons[].cta_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  cta_label: prismic.KeyTextField;
+
+  /**
+   * Cta Link field in *CallToAction → With Image Left → Primary → Buttons*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageLeft.primary.buttons[].cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
+
+  /**
+   * Cta Type field in *CallToAction → With Image Left → Primary → Buttons*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageLeft.primary.buttons[].cta_type
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  cta_type: prismic.SelectField<"Primary" | "Secondary" | "Text">;
+}
+
+/**
  * Primary content in *CallToAction → Default → Primary*
  */
 export interface CallToActionSliceDefaultPrimary {
@@ -1127,6 +1209,16 @@ export interface CallToActionSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
+
+  /**
+   * Cta Label field in *CallToAction → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.default.primary.cta_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  cta_label: prismic.KeyTextField;
 
   /**
    * Cta Link field in *CallToAction → Default → Primary*
@@ -1232,6 +1324,18 @@ export interface CallToActionSliceWithImageRightPrimary {
   featured_image: prismic.ImageField<never>;
 
   /**
+   * Buttons field in *CallToAction → With Image Right → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageRight.primary.buttons[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  buttons: prismic.GroupField<
+    Simplify<CallToActionSliceWithImageRightPrimaryButtonsItem>
+  >;
+
+  /**
    * anchor field in *CallToAction → With Image Right → Primary*
    *
    * - **Field Type**: Text
@@ -1317,6 +1421,18 @@ export interface CallToActionSliceWithImageLeftPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   featured_image: prismic.ImageField<never>;
+
+  /**
+   * Buttons field in *CallToAction → With Image Left → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: call_to_action.withImageLeft.primary.buttons[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  buttons: prismic.GroupField<
+    Simplify<CallToActionSliceWithImageLeftPrimaryButtonsItem>
+  >;
 
   /**
    * anchor field in *CallToAction → With Image Left → Primary*
@@ -2616,6 +2732,48 @@ type FormSliceVariation =
 export type FormSlice = prismic.SharedSlice<"form", FormSliceVariation>;
 
 /**
+ * Item in *Hero → Default → Primary → Buttons*
+ */
+export interface HeroSliceDefaultPrimaryButtonsItem {
+  /**
+   * Cta Label field in *Hero → Default → Primary → Buttons*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.buttons[].cta_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  cta_label: prismic.KeyTextField;
+
+  /**
+   * Cta Link field in *Hero → Default → Primary → Buttons*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.buttons[].cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
+
+  /**
+   * Cta Type field in *Hero → Default → Primary → Buttons*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: Primary
+   * - **API ID Path**: hero.default.primary.buttons[].cta_type
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  cta_type: prismic.SelectField<"Primary" | "Secondary" | "Text", "filled">;
+}
+
+/**
  * Primary content in *Hero → Default → Primary*
  */
 export interface HeroSliceDefaultPrimary {
@@ -2649,6 +2807,16 @@ export interface HeroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
+
+  /**
+   * Buttons field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.buttons[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  buttons: prismic.GroupField<Simplify<HeroSliceDefaultPrimaryButtonsItem>>;
 
   /**
    * Cta Link field in *Hero → Default → Primary*
@@ -4610,7 +4778,9 @@ declare module "@prismicio/client" {
       ArticleListSliceHorizontalList,
       CallToActionSlice,
       CallToActionSliceDefaultPrimary,
+      CallToActionSliceWithImageRightPrimaryButtonsItem,
       CallToActionSliceWithImageRightPrimary,
+      CallToActionSliceWithImageLeftPrimaryButtonsItem,
       CallToActionSliceWithImageLeftPrimary,
       CallToActionSliceVariation,
       CallToActionSliceDefault,
@@ -4658,6 +4828,7 @@ declare module "@prismicio/client" {
       FormSliceWithDetails,
       FormSliceCentered,
       HeroSlice,
+      HeroSliceDefaultPrimaryButtonsItem,
       HeroSliceDefaultPrimary,
       HeroSliceTitleOnlyPrimary,
       HeroSliceVariation,
