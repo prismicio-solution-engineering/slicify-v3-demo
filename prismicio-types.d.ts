@@ -2651,16 +2651,6 @@ export interface HeroSliceDefaultPrimary {
   description: prismic.RichTextField;
 
   /**
-   * anchor field in *Hero → Default → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: optional
-   * - **API ID Path**: hero.default.primary.anchor
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  anchor: prismic.KeyTextField;
-
-  /**
    * Cta Link field in *Hero → Default → Primary*
    *
    * - **Field Type**: Link
@@ -2677,6 +2667,16 @@ export interface HeroSliceDefaultPrimary {
       "Primary" | "Secondary" | "Text"
     >
   >;
+
+  /**
+   * anchor field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: optional
+   * - **API ID Path**: hero.default.primary.anchor
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  anchor: prismic.KeyTextField;
 }
 
 /**
