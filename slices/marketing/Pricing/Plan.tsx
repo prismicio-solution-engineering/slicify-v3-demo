@@ -91,15 +91,23 @@ export default function Plan({
       >
         {price}
       </p>
+
       <Button
         field={link}
-        variant={featured || lightTheme ? "solid" : "outline"}
+        variation={featured || lightTheme ? "solid" : "outline"}
         color={lightTheme ? "blue" : "white"}
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
         Get started
       </Button>
+      {/* <Button
+        field={link}
+        variation={featured || lightTheme ? "solid" : "outline"}
+        color={lightTheme ? "blue" : "white"}
+        className="mt-8"
+        aria-label={`Get started with the ${name} plan for ${price}`}
+      /> */}
       <div className="mt-10">
         <PrismicRichText
           field={features}
