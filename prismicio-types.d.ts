@@ -529,16 +529,6 @@ export type FooterDocument<Lang extends string = string> =
  */
 export interface HeaderDocumentDataLeftSideLinksItem {
   /**
-   * Label field in *Header → Left Side Links*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: header.left_side_links[].label
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  label: prismic.RichTextField;
-
-  /**
    * Link field in *Header → Left Side Links*
    *
    * - **Field Type**: Link
@@ -553,43 +543,12 @@ export interface HeaderDocumentDataLeftSideLinksItem {
     prismic.FieldState,
     "Text" | "Button"
   >;
-
-  /**
-   * Anchor field in *Header → Left Side Links*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: header.left_side_links[].anchor
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  anchor: prismic.KeyTextField;
-
-  /**
-   * Link Type field in *Header → Left Side Links*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **Default Value**: Text Link
-   * - **API ID Path**: header.left_side_links[].link_type
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  link_type: prismic.SelectField<"Text Link" | "Button", "filled">;
 }
 
 /**
  * Item in *Header → Right Side Links*
  */
 export interface HeaderDocumentDataRightSideLinksItem {
-  /**
-   * Label field in *Header → Right Side Links*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: header.right_side_links[].label
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  label: prismic.RichTextField;
-
   /**
    * Link field in *Header → Right Side Links*
    *
@@ -605,27 +564,6 @@ export interface HeaderDocumentDataRightSideLinksItem {
     prismic.FieldState,
     "Text" | "Button"
   >;
-
-  /**
-   * Anchor field in *Header → Right Side Links*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: header.right_side_links[].anchor
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  anchor: prismic.KeyTextField;
-
-  /**
-   * Link Type field in *Header → Right Side Links*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **Default Value**: Text Link
-   * - **API ID Path**: header.right_side_links[].link_type
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  link_type: prismic.SelectField<"Text Link" | "Button", "filled">;
 }
 
 type HeaderDocumentDataSlicesSlice = never;
@@ -1094,88 +1032,6 @@ export type ArticleListSlice = prismic.SharedSlice<
 >;
 
 /**
- * Item in *CallToAction → With Image Right → Primary → Buttons*
- */
-export interface CallToActionSliceWithImageRightPrimaryButtonsItem {
-  /**
-   * Cta Label field in *CallToAction → With Image Right → Primary → Buttons*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.withImageRight.primary.buttons[].cta_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  cta_label: prismic.KeyTextField;
-
-  /**
-   * Cta Link field in *CallToAction → With Image Right → Primary → Buttons*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.withImageRight.primary.buttons[].cta_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  cta_link: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    never
-  >;
-
-  /**
-   * Cta Type field in *CallToAction → With Image Right → Primary → Buttons*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.withImageRight.primary.buttons[].cta_type
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  cta_type: prismic.SelectField<"Primary" | "Secondary" | "Text">;
-}
-
-/**
- * Item in *CallToAction → With Image Left → Primary → Buttons*
- */
-export interface CallToActionSliceWithImageLeftPrimaryButtonsItem {
-  /**
-   * Cta Label field in *CallToAction → With Image Left → Primary → Buttons*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.withImageLeft.primary.buttons[].cta_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  cta_label: prismic.KeyTextField;
-
-  /**
-   * Cta Link field in *CallToAction → With Image Left → Primary → Buttons*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.withImageLeft.primary.buttons[].cta_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  cta_link: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    never
-  >;
-
-  /**
-   * Cta Type field in *CallToAction → With Image Left → Primary → Buttons*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.withImageLeft.primary.buttons[].cta_type
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  cta_type: prismic.SelectField<"Primary" | "Secondary" | "Text">;
-}
-
-/**
  * Primary content in *CallToAction → Default → Primary*
  */
 export interface CallToActionSliceDefaultPrimary {
@@ -1209,16 +1065,6 @@ export interface CallToActionSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
-
-  /**
-   * Cta Label field in *CallToAction → Default → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.default.primary.cta_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  cta_label: prismic.KeyTextField;
 
   /**
    * Cta Link field in *CallToAction → Default → Primary*
@@ -1324,18 +1170,6 @@ export interface CallToActionSliceWithImageRightPrimary {
   featured_image: prismic.ImageField<never>;
 
   /**
-   * Buttons field in *CallToAction → With Image Right → Primary*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.withImageRight.primary.buttons[]
-   * - **Documentation**: https://prismic.io/docs/field#group
-   */
-  buttons: prismic.GroupField<
-    Simplify<CallToActionSliceWithImageRightPrimaryButtonsItem>
-  >;
-
-  /**
    * anchor field in *CallToAction → With Image Right → Primary*
    *
    * - **Field Type**: Text
@@ -1421,18 +1255,6 @@ export interface CallToActionSliceWithImageLeftPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   featured_image: prismic.ImageField<never>;
-
-  /**
-   * Buttons field in *CallToAction → With Image Left → Primary*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: call_to_action.withImageLeft.primary.buttons[]
-   * - **Documentation**: https://prismic.io/docs/field#group
-   */
-  buttons: prismic.GroupField<
-    Simplify<CallToActionSliceWithImageLeftPrimaryButtonsItem>
-  >;
 
   /**
    * anchor field in *CallToAction → With Image Left → Primary*
@@ -2732,48 +2554,6 @@ type FormSliceVariation =
 export type FormSlice = prismic.SharedSlice<"form", FormSliceVariation>;
 
 /**
- * Item in *Hero → Default → Primary → Buttons*
- */
-export interface HeroSliceDefaultPrimaryButtonsItem {
-  /**
-   * Cta Label field in *Hero → Default → Primary → Buttons*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: hero.default.primary.buttons[].cta_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  cta_label: prismic.KeyTextField;
-
-  /**
-   * Cta Link field in *Hero → Default → Primary → Buttons*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: hero.default.primary.buttons[].cta_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  cta_link: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    never
-  >;
-
-  /**
-   * Cta Type field in *Hero → Default → Primary → Buttons*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **Default Value**: Primary
-   * - **API ID Path**: hero.default.primary.buttons[].cta_type
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  cta_type: prismic.SelectField<"Primary" | "Secondary" | "Text", "filled">;
-}
-
-/**
  * Primary content in *Hero → Default → Primary*
  */
 export interface HeroSliceDefaultPrimary {
@@ -2807,16 +2587,6 @@ export interface HeroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
-
-  /**
-   * Buttons field in *Hero → Default → Primary*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: hero.default.primary.buttons[]
-   * - **Documentation**: https://prismic.io/docs/field#group
-   */
-  buttons: prismic.GroupField<Simplify<HeroSliceDefaultPrimaryButtonsItem>>;
 
   /**
    * Cta Link field in *Hero → Default → Primary*
@@ -2967,16 +2737,6 @@ export interface JobListSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   image: prismic.ImageField<never>;
-
-  /**
-   * Link text field in *JobList → Default → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: job_list.default.primary.link_text
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  link_text: prismic.KeyTextField;
 
   /**
    * Link field in *JobList → Default → Primary*
@@ -3597,16 +3357,6 @@ export interface PricingSliceWithPromoPrimary {
   promo_description: prismic.RichTextField;
 
   /**
-   * Promo Link Label field in *Pricing → With Promo → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: pricing.withPromo.primary.promo_link_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  promo_link_label: prismic.KeyTextField;
-
-  /**
    * Promo Link field in *Pricing → With Promo → Primary*
    *
    * - **Field Type**: Link
@@ -3730,16 +3480,6 @@ export interface PricingSliceWithFilterPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   promo_description: prismic.RichTextField;
-
-  /**
-   * Promo Link Label field in *Pricing → With Filter → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: pricing.withFilter.primary.promo_link_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  promo_link_label: prismic.KeyTextField;
 
   /**
    * Promo Link field in *Pricing → With Filter → Primary*
@@ -4778,9 +4518,7 @@ declare module "@prismicio/client" {
       ArticleListSliceHorizontalList,
       CallToActionSlice,
       CallToActionSliceDefaultPrimary,
-      CallToActionSliceWithImageRightPrimaryButtonsItem,
       CallToActionSliceWithImageRightPrimary,
-      CallToActionSliceWithImageLeftPrimaryButtonsItem,
       CallToActionSliceWithImageLeftPrimary,
       CallToActionSliceVariation,
       CallToActionSliceDefault,
@@ -4828,7 +4566,6 @@ declare module "@prismicio/client" {
       FormSliceWithDetails,
       FormSliceCentered,
       HeroSlice,
-      HeroSliceDefaultPrimaryButtonsItem,
       HeroSliceDefaultPrimary,
       HeroSliceTitleOnlyPrimary,
       HeroSliceVariation,
