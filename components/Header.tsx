@@ -21,8 +21,8 @@ function MobileNavLink({
 }: {
   link: Simplify<HeaderDocumentDataLeftSideLinksItem>;
 }) {
-  switch (link.link_type) {
-    case "Text Link":
+  switch (link.link.variant) {
+    case "Text":
       return (
         <Popover.Button>
           <PrismicNextLink field={link.link} />
@@ -131,10 +131,10 @@ export function Header({ header, languages }: HeaderProps) {
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               {header.left_side_links.map((link, index) => {
-                switch (link.link_type) {
+                switch (link.link.variant) {
                   case "Button":
                     return <HeaderLinkButton key={index} {...link} />;
-                  case "Text Link":
+                  case "Text":
                     return <HeaderLinkDefault key={index} {...link} />;
                 }
               })}
@@ -143,10 +143,10 @@ export function Header({ header, languages }: HeaderProps) {
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             {header.right_side_links.map((link, index) => {
-              switch (link.link_type) {
+              switch (link.link.variant) {
                 case "Button":
                   return <HeaderLinkButton key={index} {...link} />;
-                case "Text Link":
+                case "Text":
                   return <HeaderLinkDefault key={index} {...link} />;
               }
             })}
