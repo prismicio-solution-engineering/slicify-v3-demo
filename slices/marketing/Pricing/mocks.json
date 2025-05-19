@@ -294,14 +294,9 @@
 					}
 				]
 			},
-			"promo_link_label": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Buy discounted license"
-			},
 			"promo_link": {
-				"__TYPE__": "LinkContent",
 				"key": "cc9e0c31-3299-46ed-9ba2-786c63cab26d",
+				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
 					"url": "http://google.com",
@@ -746,11 +741,6 @@
 						}
 					}
 				]
-			},
-			"promo_link_label": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Buy discounted license"
 			},
 			"promo_link": {
 				"key": "0c31220e-76b0-4d31-808e-db52fc8a1283",

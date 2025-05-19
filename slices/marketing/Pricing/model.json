@@ -222,13 +222,6 @@
             "single": "paragraph,em"
           }
         },
-        "promo_link_label": {
-          "type": "Text",
-          "config": {
-            "label": "Promo Link Label",
-            "placeholder": ""
-          }
-        },
         "promo_link": {
           "type": "Link",
           "config": {
@@ -377,13 +370,6 @@
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph"
-          }
-        },
-        "promo_link_label": {
-          "type": "Text",
-          "config": {
-            "label": "Promo Link Label",
-            "placeholder": ""
           }
         },
         "promo_link": {
