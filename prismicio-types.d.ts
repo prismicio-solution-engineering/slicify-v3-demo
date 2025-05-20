@@ -1775,7 +1775,7 @@ export interface FeaturesSliceRightSidePrimaryFeaturesItem {
    * - **API ID Path**: features.rightSide.primary.features[].feature_screenshot
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  feature_screenshot: prismic.ImageField<never>;
+  feature_screenshot: prismic.ImageField<"mobile">;
 }
 
 /**
@@ -1810,7 +1810,7 @@ export interface FeaturesSliceLeftSidePrimaryFeaturesItem {
    * - **API ID Path**: features.leftSide.primary.features[].feature_screenshot
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  feature_screenshot: prismic.ImageField<never>;
+  feature_screenshot: prismic.ImageField<"mobile">;
 }
 
 /**
@@ -1865,7 +1865,7 @@ export interface FeaturesSliceAbovePrimaryFeaturesItem {
    * - **API ID Path**: features.above.primary.features[].feature_screenshot
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  feature_screenshot: prismic.ImageField<never>;
+  feature_screenshot: prismic.ImageField<"mobile">;
 }
 
 /**
@@ -1920,7 +1920,7 @@ export interface FeaturesSliceBelowPrimaryFeaturesItem {
    * - **API ID Path**: features.below.primary.features[].feature_screenshot
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  feature_screenshot: prismic.ImageField<never>;
+  feature_screenshot: prismic.ImageField<"mobile">;
 }
 
 /**
