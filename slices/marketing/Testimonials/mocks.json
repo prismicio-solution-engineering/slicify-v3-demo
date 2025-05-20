@@ -1401,26 +1401,46 @@
 			},
 			"author_image": {
 				"__TYPE__": "ImageContent",
-				"provider": "imgix",
-				"url": "https://images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdHxlbnwwfHx8fDE3MzQ2MDI0Mzh8MA&ixlib=rb-4.0.3&q=85&rect=419,0,2975,2975&w=56&h=56",
-				"alt": "grayscale photo of woman wearing necklace and top",
 				"origin": {
-					"id": "0fN7Fxv1eWA",
-					"url": "https://images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdHxlbnwwfHx8fDE3MzQ2MDI0Mzh8MA&ixlib=rb-4.0.3&q=85",
-					"width": 3813,
-					"height": 2975
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+					"width": 3882,
+					"height": 2584
 				},
-				"width": 56,
-				"height": 56,
+				"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?rect=649%2C0%2C2584%2C2584&w=288&h=288",
+				"width": 288,
+				"height": 288,
 				"edit": {
-					"background": "transparent",
 					"zoom": 1,
 					"crop": {
-						"x": 419,
+						"x": 649,
 						"y": 0
-					}
+					},
+					"background": "transparent"
 				},
-				"thumbnails": {}
+				"alt": "crop",
+				"thumbnails": {
+					"mobile": {
+						"origin": {
+							"id": "mobile",
+							"url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b",
+							"width": 3560,
+							"height": 5340
+						},
+						"url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?rect=0%2C890%2C3560%2C3560&w=64&h=64",
+						"width": 64,
+						"height": 64,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 890
+							},
+							"background": "transparent"
+						},
+						"alt": "agree"
+					}
+				}
 			},
 			"theme": {
 				"__TYPE__": "FieldContent",

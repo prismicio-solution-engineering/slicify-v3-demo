@@ -66,11 +66,12 @@
 							[
 								"register_link",
 								{
+									"key": "ff2b66c7-07e0-497f-a355-7516c2e96086",
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
 										"url": "http://twitter.com",
-										"target": ""
+										"text": "bank"
 									}
 								}
 							],
@@ -121,11 +122,12 @@
 							[
 								"register_link",
 								{
+									"key": "c1697006-8308-4b48-ae67-bf6b909f5872",
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
-										"url": "http://twitter.com",
-										"target": ""
+										"url": "https://prismic.io",
+										"text": "town"
 									}
 								}
 							],
@@ -185,11 +187,12 @@
 							[
 								"register_link",
 								{
+									"key": "239190df-3795-4838-9cea-6a68fa48d0ec",
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
 										"url": "http://twitter.com",
-										"target": ""
+										"text": "told"
 									}
 								}
 							],
@@ -291,16 +294,13 @@
 					}
 				]
 			},
-			"promo_link_label": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Buy discounted license"
-			},
 			"promo_link": {
+				"key": "cc9e0c31-3299-46ed-9ba2-786c63cab26d",
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
-					"url": "http://twitter.com"
+					"url": "http://google.com",
+					"text": "person"
 				}
 			},
 			"plans": {
@@ -344,11 +344,12 @@
 							[
 								"register_link",
 								{
+									"key": "536c3c35-326e-41c5-9a0c-8a12a47f082b",
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
-										"url": "http://twitter.com",
-										"target": ""
+										"url": "http://google.com",
+										"text": "pitch"
 									}
 								}
 							],
@@ -408,11 +409,12 @@
 							[
 								"register_link",
 								{
+									"key": "ee84f94e-dd5f-4faa-b882-684bb1f849c7",
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
 										"url": "http://twitter.com",
-										"target": ""
+										"text": "explanation"
 									}
 								}
 							],
@@ -526,10 +528,12 @@
 							[
 								"register_link",
 								{
+									"key": "8a0990f8-c23b-4ea0-b2a7-06f2108f0899",
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
-										"url": "http://twitter.com"
+										"url": "https://slicemachine.dev",
+										"text": "once"
 									}
 								}
 							],
@@ -701,11 +705,12 @@
 							[
 								"register_link",
 								{
+									"key": "9146a1ea-4b81-4c98-805a-3edb465061b9",
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
-										"url": "http://twitter.com",
-										"target": ""
+										"url": "http://google.com",
+										"text": "famous"
 									}
 								}
 							]
@@ -737,16 +742,13 @@
 					}
 				]
 			},
-			"promo_link_label": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Buy discounted license"
-			},
 			"promo_link": {
+				"key": "0c31220e-76b0-4d31-808e-db52fc8a1283",
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
-					"url": "https://slicemachine.dev"
+					"url": "http://twitter.com",
+					"text": "cup"
 				}
 			},
 			"anchor": {
