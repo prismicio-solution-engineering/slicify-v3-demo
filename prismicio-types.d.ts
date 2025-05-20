@@ -4222,7 +4222,7 @@ export interface TestimonialsSliceSingleWithLargeImagePrimary {
    * - **API ID Path**: testimonials.singleWithLargeImage.primary.author_image
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  author_image: prismic.ImageField<never>;
+  author_image: prismic.ImageField<"mobile">;
 
   /**
    * anchor field in *Testimonials → Single With Large Image → Primary*
