@@ -8,19 +8,19 @@ import { createSliceMachineManager } from "@slicemachine/manager";
 
 // Repositories we want to replicate the models from the main repository to.
 const SUB_REPOSITORIES = [
-  "slicify-v3-adriana",
-  "slicify-v3-alexm",
-  "slicify-v3-andrea",
-  "slicify-v3-brenda",
-  "slicify-v3-lea",
-  "slicify-v3-maya",
-  "slicify-v3-michael",
+  // "slicify-v3-adriana",
+  // "slicify-v3-alexm",
+  // "slicify-v3-andrea",
+  // "slicify-v3-brenda",
+  // "slicify-v3-lea",
+  // "slicify-v3-maya",
+  // "slicify-v3-michael",
   "slicify-v3-nathan",
-  "slicify-v3-nathanael",
-  "slicify-v3-noor",
-  "slicify-v3-samira",
-  "slicify-v3-sarah",
-  "slicify-v3-thomas",
+  // "slicify-v3-nathanael",
+  // "slicify-v3-noor",
+  // "slicify-v3-samira",
+  // "slicify-v3-sarah",
+  // "slicify-v3-thomas",
 ]
 
 const manager = createSliceMachineManager();
