@@ -1,6 +1,7 @@
 import "dotenv/config";
 import * as prismic from "@prismicio/client";
 import { repositoryName } from "@/slicemachine.config.json";
+import { AllDocumentTypes } from "@/prismicio-types";
 
 // update page by page
 const pagesToUpdate = [
@@ -79,7 +80,7 @@ const SUB_REPOSITORIES = [
     },
 ]
 
-const updateContent = async (template, child) => {
+const updateContent = async (template: any, child: any) => {
 
     // Prismic setup
     const writeClient = prismic.createWriteClient(child.repoName, {
@@ -95,7 +96,7 @@ const updateContent = async (template, child) => {
         await client.getByUID(template.type, template.uid)
         : await client.getSingle(template.type);
 
-        console.log(documentFromTemplate)
+    console.log(documentFromTemplate)
     // Update document in sub-repo
     const documentToUpdate = template.uid ?
         await writeClient.getByUID(template.type, template.uid)

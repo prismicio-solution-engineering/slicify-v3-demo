@@ -49,7 +49,7 @@ async function main() {
     const sub = SUB_REPOSITORIES[i];
     let progress = 0;
 
-    function logProgress(progressed?: boolean) {
+    const logProgress = (progressed?: boolean) => {
       if (progressed) {
         progress++;
         // Clean up last progress line
