@@ -5,9 +5,9 @@ import { AllDocumentTypes } from "@/prismicio-types";
 
 // update page by page
 const pagesToUpdate = [
-    {
-        type: "home_page",
-    },
+    // {
+    //     type: "home_page",
+    // },
     {
         type: "landing_page",
         uid: "get-certified",
@@ -83,37 +83,47 @@ const SUB_REPOSITORIES = [
 const updateContent = async (template: any, child: any) => {
 
     // Prismic setup
-    const writeClient = prismic.createWriteClient(child.repoName, {
+    // const writeClient = prismic.createWriteClient(child.repoName, {
+    //     writeToken: child.token,
+    // });
+
+    const wClient = prismic.createWriteClient(child.repoName, {
         writeToken: child.token,
-    });
+        fetch(url, options) {
+            if (options.headers) {
+                delete options.headers["x-api-key"]
+            }
+            console.log(url, options);
+            return fetch(url, options)
+        }
+    })
 
     const migration = prismic.createMigration();
 
     // Fetch from template
-
     const client = prismic.createClient("slicify-v3-template");
     const documentFromTemplate = template.uid ?
         await client.getByUID(template.type, template.uid)
-        : await client.getSingle(template.type);
+        : await client.getSingle(template.type); // doesn't work for IF
 
-    console.log(documentFromTemplate)
+    // console.log("Doc from template", documentFromTemplate)
     // Update document in sub-repo
     const documentToUpdate = template.uid ?
-        await writeClient.getByUID(template.type, template.uid)
-        : await writeClient.getSingle(template.type);
+        await wClient.getByUID(template.type, template.uid)
+        : await wClient.getSingle(template.type);
 
     const document = migration.updateDocument(documentFromTemplate);
 
     // Execute the prepared migration at the very end of the script
-    await writeClient.migrate(migration, {
-        reporter: (event) => console.log(event),
+    await wClient.migrate(migration, {
+        reporter: (event) => console.log("EVENT", event),
     });
 }
 
 
 const bulkUpdate = () => {
     pagesToUpdate.forEach(page => {
-        console.log("UPDATING PAGE", page)
+        // console.log("UPDATING repo", SUB_REPOSITORIES[7])
         updateContent(page, SUB_REPOSITORIES[7])
     });
 }
