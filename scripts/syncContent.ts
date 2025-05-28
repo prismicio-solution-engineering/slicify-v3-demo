@@ -3,28 +3,28 @@ import * as prismic from "@prismicio/client";
 import { repositoryName } from "@/slicemachine.config.json";
 import { AllDocumentTypes } from "@/prismicio-types";
 
-// update page by page
+// List of pages to update
 const pagesToUpdate = [
-    {
-        type: "home_page",
-    },
-    {
-        type: "landing_page",
-        uid: "get-certified",
-    },
+    // {
+    //     type: "home_page",
+    // },
+    // {
+    //     type: "landing_page",
+    //     uid: "get-certified",
+    // },
     {
         type: "landing_page",
         uid: "exclusive-access-june-2023",
     },
-    {
-        type: "header",
-    },
-    {
-        type: "footer",
-    },
+    // {
+    //     type: "header",
+    // },
+    // {
+    //     type: "footer",
+    // },
 ]
 
-// Repositories we want to replicate the models from the main repository to.
+// Repositories we want to update
 const SUB_REPOSITORIES = [
     {
         repoName: "slicify-v3-adriana",
@@ -90,13 +90,14 @@ const updateContent = async (template: any, child: any) => {
     const migration = prismic.createMigration();
 
     // Fetch from template
-
     const client = prismic.createClient("slicify-v3-template");
     const documentFromTemplate = template.uid ?
         await client.getByUID(template.type, template.uid)
         : await client.getSingle(template.type);
 
+    // TODO : download the jsons to enable updates of IF & assets
     console.log(documentFromTemplate)
+
     // Update document in sub-repo
     const documentToUpdate = template.uid ?
         await writeClient.getByUID(template.type, template.uid)
