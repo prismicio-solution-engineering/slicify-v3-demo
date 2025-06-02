@@ -62,7 +62,7 @@ export default function CtaWithImage({
               }}
             />
             <div className="mt-10 lg:flex justify-start gap-x-6">
-              {slice.primary.cta_link.map((link) => {
+              {slice.primary.cta_link?.map((link) => {
                 return link.variant === "Secondary" ? (
                   <Button
                     key={link.key}
