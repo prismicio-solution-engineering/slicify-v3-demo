@@ -1,8 +1,6 @@
 import * as prismic from "@prismicio/client";
 import * as prismicNext from "@prismicio/next";
 import sm from "./slicemachine.config.json";
-import { KeyTextField } from "@prismicio/client";
-import Link, { LinkProps } from "next/link";
 
 export const repositoryName = process.env.NEXT_PUBLIC_PRISMIC_ENVIRONMENT
   ? process.env.NEXT_PUBLIC_PRISMIC_ENVIRONMENT
@@ -33,7 +31,7 @@ const routes = [
   {
     type: "search",
     path: "/:lang/search",
-  }
+  },
 ];
 
 export const createClient = (config = {}) => {
@@ -47,13 +45,4 @@ export const createClient = (config = {}) => {
   });
   prismicNext.enableAutoPreviews({ client });
   return client;
-};
-
-interface AnchorLinkProps extends LinkProps {
-  anchor?: KeyTextField;
-}
-
-export const AnchorLink = ({ ...props }: AnchorLinkProps) => {
-  const resolvedHref = props.href + (props.anchor ? `#${props.anchor}` : "");
-  return <Link {...props} href={resolvedHref} />;
 };

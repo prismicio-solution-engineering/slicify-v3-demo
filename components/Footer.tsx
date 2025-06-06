@@ -1,6 +1,6 @@
 import { Container } from "@/components/Container";
 import { FooterDocumentData } from "@/prismicio-types";
-import { PrismicNextImage } from "@prismicio/next";
+import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { PrismicLink, PrismicRichText } from "@prismicio/react";
 import { createSerializerP } from "@/utils/createSerializer";
 
@@ -16,9 +16,7 @@ export function Footer(footer: FooterDocumentData) {
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
               {footer.links.map((link, index) => (
-                <PrismicLink field={link.link} key={index}>
-                  <PrismicRichText field={link.label} />
-                </PrismicLink>
+                <PrismicNextLink field={link.link} key={index} />
               ))}
             </div>
           </nav>
