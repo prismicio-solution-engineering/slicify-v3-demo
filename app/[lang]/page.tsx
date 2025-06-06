@@ -6,6 +6,7 @@ import { getLanguages } from "@/utils/getLanguages";
 import MarketingLayout from "@/components/MarketingLayout";
 import { getLocales } from "@/utils/getLocales";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 type PageParams = { lang: string };
 
@@ -15,11 +16,25 @@ export async function generateMetadata({
   params: PageParams;
 }): Promise<Metadata> {
   const client = createClient();
-  const page = await client.getSingle("home_page",{lang:params.lang}); // TODO : add graphquery to only fetch the fields and not the page
+  let page;
+  try {
+    page = await client.getSingle("home_page", {
+      lang: params.lang,
+    });
+  } catch (error) {
+    // Try to fall back to the default locale (en-us)
+    try {
+      page = await client.getSingle("home_page", {
+        lang: "en-us",
+      });
+    } catch (fallbackError) {
+      notFound();
+    }
+  }
 
   return {
-    title: page.data.meta_title,
-    description: page.data.meta_description,
+    title: page.data.meta_title || "",
+    description: page.data.meta_description || "",
   };
 }
 
@@ -32,13 +47,43 @@ export default async function Home({
 
   const client = createClient();
 
-  const [page, header, footer] = await Promise.all([
-    client.getSingle<Content.HomePageDocument>("home_page", { lang }),
-    client.getSingle<Content.HeaderDocument>("header", { lang }),
-    client.getSingle<Content.FooterDocument>("footer", { lang }),
-  ]);
+  let page;
+  try {
+    page = await client.getSingle<Content.HomePageDocument>("home_page", {
+      lang,
+    });
+  } catch (error) {
+    // Try to fall back to the default locale (en-us)
+    try {
+      page = await client.getSingle<Content.HomePageDocument>("home_page", {
+        lang: "en-us",
+      });
+    } catch (fallbackError) {
+      notFound();
+    }
+  }
 
-  const languages = await getLanguages(page, client, locales);
+  const [header, footer, languages] = await Promise.all([
+    client
+      .getSingle<Content.HeaderDocument>("header", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle<Content.HeaderDocument>("header", {
+          lang: "en-us",
+        })
+      ),
+    client
+      .getSingle<Content.FooterDocument>("footer", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle<Content.FooterDocument>("footer", {
+          lang: "en-us",
+        })
+      ),
+    getLanguages(page, client, locales),
+  ]);
 
   return (
     <MarketingLayout
