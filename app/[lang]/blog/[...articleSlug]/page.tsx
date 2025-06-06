@@ -1,11 +1,8 @@
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
-import * as prismic from "@prismicio/client";
 import { components as mktComponents } from "@/slices/marketing";
 import { components as blogComponents } from "@/slices/blog";
-import {
-  blogArticleGraphQuery,
-} from "@/utils/graphQueries";
+import { blogArticleGraphQuery } from "@/utils/graphQueries";
 import { getLanguages } from "@/utils/getLanguages";
 import BlogLayout from "@/components/BlogLayout";
 import { Content } from "@prismicio/client";
@@ -21,12 +18,39 @@ export async function generateMetadata({
   params: PageParams;
 }): Promise<Metadata> {
   const client = createClient();
-  const page = await client
-    .getByUID("blog_article", params.articleSlug[params.articleSlug.length - 1], {
-      lang: params.lang
-    })
-    .catch(() => notFound());
+  // const page = await client
+  //   .getByUID(
+  //     "blog_article",
+  //     params.articleSlug[params.articleSlug.length - 1],
+  //     {
+  //       lang: params.lang,
+  //     }
+  //   )
+  //   .catch(() => notFound());
 
+  let page;
+  try {
+    page = await client.getByUID(
+      "blog_article",
+      params.articleSlug[params.articleSlug.length - 1],
+      {
+        lang: params.lang,
+      }
+    );
+  } catch (error) {
+    // Try to fall back to the default locale (en-us)
+    try {
+      page = await client.getByUID(
+        "blog_article",
+        params.articleSlug[params.articleSlug.length - 1],
+        {
+          lang: "en-us",
+        }
+      );
+    } catch (fallbackError) {
+      notFound();
+    }
+  }
   return {
     title: page.data.meta_title,
     description: page.data.meta_description,
@@ -38,20 +62,45 @@ export default async function BlogArticle({ params }: { params: PageParams }) {
 
   const client = createClient();
 
-  const page = await client
-    .getByUID<prismic.Content.BlogArticleDocument>("blog_article", params.articleSlug[params.articleSlug.length - 1], {
-      graphQuery: blogArticleGraphQuery,
-      lang: params.lang
-    })
-    .catch(() => notFound());
+  let page;
+  try {
+    page = await client.getByUID<Content.BlogArticleDocument>(
+      "blog_article",
+      params.articleSlug[params.articleSlug.length - 1],
+      { graphQuery: blogArticleGraphQuery, lang: params.lang }
+    );
+  } catch (error) {
+    // Try to fall back to the default locale (en-us)
+    try {
+      page = await client.getByUID<Content.BlogArticleDocument>(
+        "blog_article",
+        params.articleSlug[params.articleSlug.length - 1],
+        { graphQuery: blogArticleGraphQuery, lang: "en-us" }
+      );
+    } catch (fallbackError) {
+      notFound();
+    }
+  }
 
   const [header, footer, languages] = await Promise.all([
-    client.getSingle<Content.HeaderDocument>("header", {
-      lang: params.lang,
-    }),
-    client.getSingle<Content.FooterDocument>("footer", {
-      lang: params.lang,
-    }),
+    client
+      .getSingle<Content.HeaderDocument>("header", {
+        lang: params.lang,
+      })
+      .catch(() =>
+        client.getSingle<Content.HeaderDocument>("header", {
+          lang: "en-us",
+        })
+      ),
+    client
+      .getSingle<Content.FooterDocument>("footer", {
+        lang: params.lang,
+      })
+      .catch(() =>
+        client.getSingle<Content.FooterDocument>("footer", {
+          lang: "en-us",
+        })
+      ),
     getLanguages(page, client, locales),
   ]);
 
@@ -77,26 +126,28 @@ export async function generateStaticParams() {
 
   function splitUrl(url: string) {
     // Split the URL by '/' and remove any empty strings from the result
-    const parts = url.split('/').filter(part => part !== '');
+    const parts = url.split("/").filter((part) => part !== "");
 
     // Assuming the URL format is consistent and has the language code as the first part,
     // category as the third part, and UID as the last part
     if (parts.length === 3) {
       return {
-        lang: parts[0] || '',
-        articleSlug: parts[2] ? [parts[2]] : ''
+        lang: parts[0] || "",
+        articleSlug: parts[2] ? [parts[2]] : "",
       };
     }
     if (parts.length === 4) {
       return {
-        lang: parts[0] || '',
-        articleSlug: [parts[2] || '', parts[3] || '']
+        lang: parts[0] || "",
+        articleSlug: [parts[2] || "", parts[3] || ""],
       };
     }
-    return null
+    return null;
   }
 
-  return pages.map((page) => {
-    return splitUrl(page.url!);
-  }).filter(page => page !== null);
+  return pages
+    .map((page) => {
+      return splitUrl(page.url!);
+    })
+    .filter((page) => page !== null);
 }
