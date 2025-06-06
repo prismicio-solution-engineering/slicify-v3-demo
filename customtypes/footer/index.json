@@ -3,6 +3,7 @@
   "label": "Footer",
   "repeatable": false,
   "status": true,
+  "format": "custom",
   "json": {
     "Main": {
       "logo": {
@@ -26,16 +27,8 @@
               "config": {
                 "label": "Link",
                 "placeholder": "",
-                "select": null
-              }
-            },
-            "label": {
-              "type": "StructuredText",
-              "config": {
-                "label": "Label",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "select": null,
+                "allowText": true
               }
             }
           }
@@ -85,6 +78,5 @@
         }
       }
     }
-  },
-  "format": "custom"
+  }
 }
