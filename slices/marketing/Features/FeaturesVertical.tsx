@@ -104,9 +104,16 @@ function FeaturesMobile({
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
             <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
               <PrismicNextImage
-                className="w-full"
+                className="object-cover hidden md:block"
                 field={feature.feature_screenshot}
-                sizes="52.75rem"
+                width={844}
+                height={428}
+              />
+              <PrismicNextImage
+                className="object-cover md:hidden"
+                field={feature.feature_screenshot.mobile}
+                width={390}
+                height={263}
               />
             </div>
           </div>

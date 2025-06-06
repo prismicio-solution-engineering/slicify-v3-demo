@@ -72,14 +72,11 @@ export default function CtaSimple({
                 ),
               }}
             />
-
             <Button
               field={slice.primary.cta_link}
               color={themeColor === "dark" ? "white" : "slate"}
               className="mt-10"
-            >
-              {slice.primary.cta_label}
-            </Button>
+            />
           </div>
         </Container>
       </ThemeContainer>
