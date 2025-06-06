@@ -1,12 +1,13 @@
 "use client";
 
 import type { Content } from "@prismicio/client";
-import { PrismicLink, PrismicRichText } from "@prismicio/react";
+import { PrismicRichText } from "@prismicio/react";
 import clsx from "clsx";
 import { SwirlyDoodle } from "@/components/SwirlyDoodle";
 import Plan from "./Plan";
 import { useState } from "react";
 import { ThemeContainer } from "@/components/Theme";
+import { PrismicNextLink } from "@prismicio/next";
 
 export default function PricingWithFilters({
   slice,
@@ -160,14 +161,13 @@ export default function PricingWithFilters({
                       }}
                     />
                   </div>
-                  <PrismicLink
+                  <PrismicNextLink
                     field={slice.primary.promo_link}
                     className="rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-vibrant-blue ring-1 ring-inset ring-light-blue hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vibrant-blue"
                   >
-                    {slice.primary.promo_link_label}
-
-                    <span aria-hidden="true">&rarr;</span>
-                  </PrismicLink>
+                    {slice.primary.promo_link.text}
+                    <span aria-hidden="true"> &rarr;</span>
+                  </PrismicNextLink>
                 </div>
               </div>
             </div>

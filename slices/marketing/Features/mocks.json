@@ -113,28 +113,49 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHx0d2l0dGVyfGVufDB8fHx8MTcyNjA0ODA2OXww&ixlib=rb-4.0.3&q=85&rect=336%2C315%2C2912%2C1477&w=1688&h=856",
-									"alt": "Twitter website on desktop",
 									"origin": {
-										"id": "2Bdyxgz3OM0",
-										"url": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHx0d2l0dGVyfGVufDB8fHx8MTcyNjA0ODA2OXww&ixlib=rb-4.0.3&q=85",
-										"width": 3654,
-										"height": 2506
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+										"width": 12288,
+										"height": 16384
 									},
+									"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?rect=0%2C5076%2C12288%2C6231&w=1688&h=856",
 									"width": 1688,
 									"height": 856,
 									"edit": {
-										"background": "transparent",
-										"zoom": 1.255,
+										"zoom": 1,
 										"crop": {
-											"x": 336,
-											"y": 315
-										}
+											"x": 0,
+											"y": 5076
+										},
+										"background": "transparent"
 									},
+									"alt": "dead",
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+												"width": 4000,
+												"height": 4000
+											},
+											"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?rect=0%2C651%2C4000%2C2697&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 651
+												},
+												"background": "transparent"
+											},
+											"alt": "nice",
+											"credits": null
+										}
+									}
 								}
 							]
 						]
@@ -220,28 +241,49 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1722503585257-27201c6bbf20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8bGlua2VkaW58ZW58MHx8fHwxNzI2MDQ4NDE0fDA&ixlib=rb-4.0.3&q=85&rect=0,479,6000,3043&w=1688&h=856",
-									"alt": "A laptop computer sitting on top of a wooden table",
 									"origin": {
-										"id": "iULJlTLi9Ho",
-										"url": "https://images.unsplash.com/photo-1722503585257-27201c6bbf20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8bGlua2VkaW58ZW58MHx8fHwxNzI2MDQ4NDE0fDA&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 4000
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+										"width": 3456,
+										"height": 3456
 									},
+									"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?rect=0%2C852%2C3456%2C1753&w=1688&h=856",
 									"width": 1688,
 									"height": 856,
 									"edit": {
-										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
-											"y": 479
-										}
+											"y": 852
+										},
+										"background": "transparent"
 									},
+									"alt": "hall",
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+												"width": 4000,
+												"height": 4000
+											},
+											"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?rect=0%2C651%2C4000%2C2697&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 651
+												},
+												"background": "transparent"
+											},
+											"alt": "smell",
+											"credits": null
+										}
+									}
 								}
 							]
 						]
@@ -327,28 +369,49 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1523474438810-b04a2480633c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxhcHBzfGVufDB8fHx8MTcyNjA0ODQ2OHww&ixlib=rb-4.0.3&q=85&rect=0,479,6000,3043&w=1688&h=856",
-									"alt": "close up photo of black Samsung Galaxy smartphone",
 									"origin": {
-										"id": "ZYLmudR28SA",
-										"url": "https://images.unsplash.com/photo-1523474438810-b04a2480633c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxhcHBzfGVufDB8fHx8MTcyNjA0ODQ2OHww&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 4000
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+										"width": 5616,
+										"height": 3744
 									},
+									"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?rect=0%2C448%2C5616%2C2848&w=1688&h=856",
 									"width": 1688,
 									"height": 856,
 									"edit": {
-										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
-											"y": 479
-										}
+											"y": 448
+										},
+										"background": "transparent"
 									},
+									"alt": "nervous",
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+												"width": 12288,
+												"height": 16384
+											},
+											"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?rect=0%2C4049%2C12288%2C8287&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 4049
+												},
+												"background": "transparent"
+											},
+											"alt": "making",
+											"credits": null
+										}
+									}
 								}
 							]
 						]
@@ -477,28 +540,47 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHx0d2l0dGVyfGVufDB8fHx8MTcyNjA0ODA2OXww&ixlib=rb-4.0.3&q=85&rect=336%2C315%2C2912%2C1477&w=1688&h=856",
-									"alt": "Twitter website on desktop",
+									"__TYPE__": "ImageContent",
 									"origin": {
-										"id": "2Bdyxgz3OM0",
-										"url": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHx0d2l0dGVyfGVufDB8fHx8MTcyNjA0ODA2OXww&ixlib=rb-4.0.3&q=85",
-										"width": 3654,
-										"height": 2506
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+										"width": 3456,
+										"height": 3456
 									},
-									"width": 1688,
+									"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?rect=0%2C851%2C3456%2C1755&w=1686&h=856",
+									"width": 1686,
 									"height": 856,
 									"edit": {
-										"background": "transparent",
-										"zoom": 1.255,
+										"zoom": 1,
 										"crop": {
-											"x": 336,
-											"y": 315
-										}
+											"x": 0,
+											"y": 851
+										},
+										"background": "transparent"
 									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"alt": "easily",
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a",
+												"width": 3024,
+												"height": 3778
+											},
+											"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?rect=0%2C869%2C3024%2C2039&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 869
+												},
+												"background": "transparent"
+											},
+											"alt": "ought"
+										}
+									}
 								}
 							]
 						]
@@ -584,28 +666,47 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1722503585257-27201c6bbf20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8bGlua2VkaW58ZW58MHx8fHwxNzI2MDQ4NDE0fDA&ixlib=rb-4.0.3&q=85&rect=0,479,6000,3043&w=1688&h=856",
-									"alt": "A laptop computer sitting on top of a wooden table",
+									"__TYPE__": "ImageContent",
 									"origin": {
-										"id": "iULJlTLi9Ho",
-										"url": "https://images.unsplash.com/photo-1722503585257-27201c6bbf20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8bGlua2VkaW58ZW58MHx8fHwxNzI2MDQ4NDE0fDA&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 4000
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b",
+										"width": 3560,
+										"height": 5340
 									},
-									"width": 1688,
+									"url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?rect=0%2C1766%2C3560%2C1807&w=1686&h=856",
+									"width": 1686,
 									"height": 856,
 									"edit": {
-										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
-											"y": 479
-										}
+											"y": 1766
+										},
+										"background": "transparent"
 									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"alt": "fell",
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+												"width": 4380,
+												"height": 2895
+											},
+											"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?rect=44%2C0%2C4293%2C2895&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 44,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "catch"
+										}
+									}
 								}
 							]
 						]
@@ -691,28 +792,47 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1523474438810-b04a2480633c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxhcHBzfGVufDB8fHx8MTcyNjA0ODQ2OHww&ixlib=rb-4.0.3&q=85&rect=0,479,6000,3043&w=1688&h=856",
-									"alt": "close up photo of black Samsung Galaxy smartphone",
+									"__TYPE__": "ImageContent",
 									"origin": {
-										"id": "ZYLmudR28SA",
-										"url": "https://images.unsplash.com/photo-1523474438810-b04a2480633c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxhcHBzfGVufDB8fHx8MTcyNjA0ODQ2OHww&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 4000
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+										"width": 3810,
+										"height": 5715
 									},
-									"width": 1688,
+									"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?rect=0%2C1890%2C3810%2C1934&w=1686&h=856",
+									"width": 1686,
 									"height": 856,
 									"edit": {
-										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
-											"y": 479
-										}
+											"y": 1890
+										},
+										"background": "transparent"
 									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"alt": "chain",
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+												"width": 8640,
+												"height": 8640
+											},
+											"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?rect=0%2C1407%2C8640%2C5826&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 1407
+												},
+												"background": "transparent"
+											},
+											"alt": "get"
+										}
+									}
 								}
 							]
 						]
@@ -853,28 +973,49 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHx0d2l0dGVyfGVufDB8fHx8MTcyNjA0ODA2OXww&ixlib=rb-4.0.3&q=85&rect=336%2C315%2C2912%2C1477&w=1688&h=856",
-									"alt": "Twitter website on desktop",
 									"origin": {
-										"id": "2Bdyxgz3OM0",
-										"url": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHx0d2l0dGVyfGVufDB8fHx8MTcyNjA0ODA2OXww&ixlib=rb-4.0.3&q=85",
-										"width": 3654,
-										"height": 2506
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea",
+										"width": 5000,
+										"height": 4613
 									},
-									"width": 1688,
-									"height": 856,
+									"url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?rect=0%2C1039%2C5000%2C2536&w=844&h=428",
+									"width": 844,
+									"height": 428,
 									"edit": {
-										"background": "transparent",
-										"zoom": 1.255,
+										"zoom": 1,
 										"crop": {
-											"x": 336,
-											"y": 315
-										}
+											"x": 0,
+											"y": 1039
+										},
+										"background": "transparent"
 									},
+									"alt": "into",
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a",
+												"width": 3024,
+												"height": 3778
+											},
+											"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?rect=0%2C869%2C3024%2C2039&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 869
+												},
+												"background": "transparent"
+											},
+											"alt": "slope",
+											"credits": null
+										}
+									}
 								}
 							]
 						]
@@ -960,28 +1101,49 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1722503585257-27201c6bbf20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8bGlua2VkaW58ZW58MHx8fHwxNzI2MDQ4NDE0fDA&ixlib=rb-4.0.3&q=85&rect=0,479,6000,3043&w=1688&h=856",
-									"alt": "A laptop computer sitting on top of a wooden table",
 									"origin": {
-										"id": "iULJlTLi9Ho",
-										"url": "https://images.unsplash.com/photo-1722503585257-27201c6bbf20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8bGlua2VkaW58ZW58MHx8fHwxNzI2MDQ4NDE0fDA&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 4000
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+										"width": 4480,
+										"height": 4480
 									},
-									"width": 1688,
-									"height": 856,
+									"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?rect=0%2C1104%2C4480%2C2272&w=844&h=428",
+									"width": 844,
+									"height": 428,
 									"edit": {
-										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
-											"y": 479
-										}
+											"y": 1104
+										},
+										"background": "transparent"
 									},
+									"alt": "number",
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+												"width": 6000,
+												"height": 4000
+											},
+											"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?rect=34%2C0%2C5932%2C4000&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 34,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "rain",
+											"credits": null
+										}
+									}
 								}
 							]
 						]
@@ -1067,28 +1229,49 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1523474438810-b04a2480633c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxhcHBzfGVufDB8fHx8MTcyNjA0ODQ2OHww&ixlib=rb-4.0.3&q=85&rect=0,479,6000,3043&w=1688&h=856",
-									"alt": "close up photo of black Samsung Galaxy smartphone",
 									"origin": {
-										"id": "ZYLmudR28SA",
-										"url": "https://images.unsplash.com/photo-1523474438810-b04a2480633c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxhcHBzfGVufDB8fHx8MTcyNjA0ODQ2OHww&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 4000
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+										"width": 3958,
+										"height": 3958
 									},
-									"width": 1688,
-									"height": 856,
+									"url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?rect=0%2C975%2C3958%2C2007&w=844&h=428",
+									"width": 844,
+									"height": 428,
 									"edit": {
-										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
-											"y": 479
-										}
+											"y": 975
+										},
+										"background": "transparent"
 									},
+									"alt": "came",
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+												"width": 4380,
+												"height": 2895
+											},
+											"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?rect=44%2C0%2C4293%2C2895&w=390&h=263",
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 44,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "mark",
+											"credits": null
+										}
+									}
 								}
 							]
 						]
@@ -1218,27 +1401,50 @@
 								"feature_screenshot",
 								{
 									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHx0d2l0dGVyfGVufDB8fHx8MTcyNjA0ODA2OXww&ixlib=rb-4.0.3&q=85&rect=336%2C315%2C2912%2C1477&w=1688&h=856",
-									"alt": "Twitter website on desktop",
+									"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjb21wdXRlcnxlbnwwfHx8fDE3NDc2NDY2NjZ8MA&ixlib=rb-4.1.0&q=85&rect=916%2C39%2C4700%2C2383&w=844&h=428",
+									"alt": "person sitting front of laptop",
 									"origin": {
-										"id": "2Bdyxgz3OM0",
-										"url": "https://images.unsplash.com/photo-1566241477600-ac026ad43874?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHx0d2l0dGVyfGVufDB8fHx8MTcyNjA0ODA2OXww&ixlib=rb-4.0.3&q=85",
-										"width": 3654,
-										"height": 2506
+										"id": "mfB1B1s4sMc",
+										"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjb21wdXRlcnxlbnwwfHx8fDE3NDc2NDY2NjZ8MA&ixlib=rb-4.1.0&q=85",
+										"width": 5616,
+										"height": 3744
 									},
-									"width": 1688,
-									"height": 856,
+									"width": 844,
+									"height": 428,
 									"edit": {
 										"background": "transparent",
-										"zoom": 1.255,
+										"zoom": 1.1949999999999998,
 										"crop": {
-											"x": 336,
-											"y": 315
+											"x": 916,
+											"y": 39
 										}
 									},
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjb21wdXRlcnxlbnwwfHx8fDE3NDc2NDY2NjZ8MA&ixlib=rb-4.1.0&q=85&rect=2428%2C541%2C2789%2C1881&w=390&h=263",
+											"alt": "person sitting front of laptop",
+											"origin": {
+												"id": "mfB1B1s4sMc",
+												"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjb21wdXRlcnxlbnwwfHx8fDE3NDc2NDY2NjZ8MA&ixlib=rb-4.1.0&q=85",
+												"width": 5616,
+												"height": 3744
+											},
+											"width": 390,
+											"height": 263,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1.9899716671812586,
+												"crop": {
+													"x": 2428,
+													"y": 541
+												}
+											},
+											"credits": null
+										}
+									}
 								}
 							]
 						]
@@ -1324,28 +1530,49 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1722503585257-27201c6bbf20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8bGlua2VkaW58ZW58MHx8fHwxNzI2MDQ4NDE0fDA&ixlib=rb-4.0.3&q=85&rect=0,479,6000,3043&w=1688&h=856",
-									"alt": "A laptop computer sitting on top of a wooden table",
 									"origin": {
-										"id": "iULJlTLi9Ho",
-										"url": "https://images.unsplash.com/photo-1722503585257-27201c6bbf20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8bGlua2VkaW58ZW58MHx8fHwxNzI2MDQ4NDE0fDA&ixlib=rb-4.0.3&q=85",
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
 										"width": 6000,
 										"height": 4000
 									},
-									"width": 1688,
-									"height": 856,
+									"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?rect=0%2C479%2C6000%2C3043&w=844&h=428",
+									"width": 844,
+									"height": 428,
 									"edit": {
-										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
 											"y": 479
-										}
+										},
+										"background": "transparent"
 									},
+									"alt": "happy",
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
+												"width": 3344,
+												"height": 2509
+											},
+											"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?rect=0%2C131%2C3344%2C2246&w=390&h=262",
+											"width": 390,
+											"height": 262,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 131
+												},
+												"background": "transparent"
+											},
+											"alt": "depth",
+											"credits": null
+										}
+									}
 								}
 							]
 						]
@@ -1431,28 +1658,49 @@
 							[
 								"feature_screenshot",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1523474438810-b04a2480633c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxhcHBzfGVufDB8fHx8MTcyNjA0ODQ2OHww&ixlib=rb-4.0.3&q=85&rect=0,479,6000,3043&w=1688&h=856",
-									"alt": "close up photo of black Samsung Galaxy smartphone",
 									"origin": {
-										"id": "ZYLmudR28SA",
-										"url": "https://images.unsplash.com/photo-1523474438810-b04a2480633c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxhcHBzfGVufDB8fHx8MTcyNjA0ODQ2OHww&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 4000
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+										"width": 4380,
+										"height": 2895
 									},
-									"width": 1688,
-									"height": 856,
+									"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?rect=0%2C337%2C4380%2C2221&w=844&h=428",
+									"width": 844,
+									"height": 428,
 									"edit": {
-										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
-											"y": 479
-										}
+											"y": 337
+										},
+										"background": "transparent"
 									},
+									"alt": "upward",
 									"credits": null,
 									"__TYPE__": "ImageContent",
-									"thumbnails": {}
+									"thumbnails": {
+										"mobile": {
+											"origin": {
+												"id": "mobile",
+												"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+												"width": 8640,
+												"height": 8640
+											},
+											"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?rect=0%2C1418%2C8640%2C5804&w=390&h=262",
+											"width": 390,
+											"height": 262,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 1418
+												},
+												"background": "transparent"
+											},
+											"alt": "stems",
+											"credits": null
+										}
+									}
 								}
 							]
 						]
