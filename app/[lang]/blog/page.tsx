@@ -7,6 +7,7 @@ import MarketingLayout from "@/components/MarketingLayout";
 import { ArticleListVertical } from "@/components/ArticleListVertical";
 import { Metadata } from "next";
 import { getLocales } from "@/utils/getLocales";
+import { notFound } from "next/navigation";
 
 type PageParams = { lang: string };
 
@@ -16,11 +17,26 @@ export async function generateMetadata({
   params: PageParams;
 }): Promise<Metadata> {
   const client = createClient();
-  const page = await client.getSingle("blog_index", { lang: params.lang });
+
+  let page;
+  try {
+    page = await client.getSingle("blog_index", {
+      lang: params.lang,
+    });
+  } catch (error) {
+    // Try to fall back to the default locale (en-us)
+    try {
+      page = await client.getSingle("blog_index", {
+        lang: "en-us",
+      });
+    } catch (fallbackError) {
+      notFound();
+    }
+  }
 
   return {
-    title: page.data.meta_title,
-    description: page.data.meta_description,
+    title: page.data.meta_title || "",
+    description: page.data.meta_description || "",
   };
 }
 
@@ -29,20 +45,47 @@ export default async function BlogIndex({
 }: {
   params: { lang: string };
 }) {
-
-
   const locales = await getLocales();
 
   const client = createClient();
-  //    ^ Automatically contains references to document types
 
-  const [page, header, footer] = await Promise.all([
-    client.getSingle<Content.BlogIndexDocument>("blog_index", { lang }),
-    client.getSingle<Content.HeaderDocument>("header", { lang }),
-    client.getSingle<Content.FooterDocument>("footer", { lang }),
+  let page;
+  try {
+    page = await client.getSingle<Content.BlogIndexDocument>("blog_index", {
+      lang,
+    });
+  } catch (error) {
+    // Try to fall back to the default locale (en-us)
+    try {
+      page = await client.getSingle<Content.BlogIndexDocument>("blog_index", {
+        lang: "en-us",
+      });
+    } catch (fallbackError) {
+      notFound();
+    }
+  }
+
+  const [header, footer, languages] = await Promise.all([
+    client
+      .getSingle<Content.HeaderDocument>("header", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle<Content.HeaderDocument>("header", {
+          lang: "en-us",
+        })
+      ),
+    client
+      .getSingle<Content.FooterDocument>("footer", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle<Content.FooterDocument>("footer", {
+          lang: "en-us",
+        })
+      ),
+    getLanguages(page, client, locales),
   ]);
-
-  const languages = await getLanguages(page, client, locales);
 
   return (
     <MarketingLayout

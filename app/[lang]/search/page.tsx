@@ -7,7 +7,7 @@ import { Content, asText } from "@prismicio/client";
 import { createClient } from "@/prismicio";
 import { getLocales } from "@/utils/getLocales";
 import { Metadata } from "next";
-
+import { notFound } from "next/navigation";
 
 type PageParams = { lang: string };
 
@@ -17,7 +17,22 @@ export async function generateMetadata({
   params: PageParams;
 }): Promise<Metadata> {
   const client = createClient();
-  const page = await client.getSingle("search",{lang:params.lang});
+
+  let page;
+  try {
+    page = await client.getSingle("search", {
+      lang: params.lang,
+    });
+  } catch (error) {
+    // Try to fall back to the default locale (en-us)
+    try {
+      page = await client.getSingle("search", {
+        lang: "en-us",
+      });
+    } catch (fallbackError) {
+      notFound();
+    }
+  }
 
   return {
     title: asText(page.data.title),
@@ -32,7 +47,6 @@ export default async function SearchPage({
   params: { lang: string };
   searchParams: { query?: string; page?: string };
 }) {
-
   const locales = await getLocales();
 
   // Get the initial query parameter from the URL
@@ -40,25 +54,53 @@ export default async function SearchPage({
 
   const client = createClient();
 
-  const [page, header, footer] = await Promise.all([
-    client.getSingle<Content.SearchDocument>("search", {
-      lang: lang,
-    }),
-    client.getSingle<Content.HeaderDocument>("header", {
-      lang: lang,
-    }),
-    client.getSingle<Content.FooterDocument>("footer", {
-      lang: lang,
-    }),
+  let page;
+  try {
+    page = await client.getSingle<Content.SearchDocument>("search", {
+      lang,
+    });
+  } catch (error) {
+    // Try to fall back to the default locale (en-us)
+    try {
+      page = await client.getSingle<Content.SearchDocument>("search", {
+        lang: "en-us",
+      });
+    } catch (fallbackError) {
+      notFound();
+    }
+  }
+
+  const [header, footer] = await Promise.all([
+    client
+      .getSingle<Content.HeaderDocument>("header", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle<Content.HeaderDocument>("header", {
+          lang: "en-us",
+        })
+      ),
+    client
+      .getSingle<Content.FooterDocument>("footer", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle<Content.FooterDocument>("footer", {
+          lang: "en-us",
+        })
+      ),
   ]);
 
   // Pass the initialQuery to performSearch
-  const results = await performSearch(initialQuery ? initialQuery.trim() : "", lang = lang);
+  const results = await performSearch(
+    initialQuery ? initialQuery.trim() : "",
+    (lang = lang)
+  );
   const languages = await getLanguages(page, client, locales);
   if (searchParams.query) {
     languages.forEach(function (language, index) {
-      languages[index].url = language.url + "?query=" + initialQuery
-    })
+      languages[index].url = language.url + "?query=" + initialQuery;
+    });
   }
 
   return (
@@ -68,7 +110,11 @@ export default async function SearchPage({
         footer={footer.data}
         languages={languages}
       >
-        <ArticleListVertical page={page} searchResults={results ?? []} lang={lang} />
+        <ArticleListVertical
+          page={page}
+          searchResults={results ?? []}
+          lang={lang}
+        />
       </MarketingLayout>
     </>
   );
