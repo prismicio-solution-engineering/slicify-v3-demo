@@ -13,9 +13,10 @@
     "@growthbook/growthbook-react": "^0.18.0",
     "@headlessui/react": "^1.7.19",
     "@heroicons/react": "^2.0.17",
-    "@prismicio/client": "^7.15.1",
-    "@prismicio/next": "^1.7.1",
-    "@prismicio/react": "^2.9.1",
+    "@prismicio/client": "^7.17.2",
+    "@prismicio/next": "^1.7.2",
+    "@prismicio/react": "^2.9.2",
+    "@slicemachine/manager": "^0.24.12",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
@@ -36,13 +37,13 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@slicemachine/adapter-next": "^0.3.65",
+    "@slicemachine/adapter-next": "^0.3.75",
     "@types/negotiator": "^0.6.3",
     "@types/react-syntax-highlighter": "^15.5.7",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "prettier": "2.8.7",
-    "slice-machine-ui": "^2.12.2",
+    "slice-machine-ui": "^2.15.2",
     "tailwindcss": "^3.3.1"
   }
 }

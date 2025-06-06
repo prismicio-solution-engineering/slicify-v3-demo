@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { PrismicLink } from "@prismicio/react";
 import type * as prismic from "@prismicio/client";
 import type * as clsxT from "clsx";
+import { PrismicNextLink } from "@prismicio/next";
 
 const baseStyles: clsxT.ClassDictionary = {
   solid:
@@ -21,9 +22,9 @@ const variantStyles: clsxT.ClassDictionary = {
   },
   outline: {
     slate:
-      "ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300",
+      "ring-slate-700 text-slate-700 hover:text-slate-900 hover:ring-slate-700 active:bg-slate-400 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-700",
     white:
-      "ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white",
+      "ring-slate-200 text-white hover:ring-slate-500 active:ring-slate-300 active:text-slate-100 focus-visible:outline-white",
   },
   link: {
     slate: "text-slate-700 hover:text-slate-900",
@@ -32,7 +33,7 @@ const variantStyles: clsxT.ClassDictionary = {
 };
 
 export function Button({
-  variant = "solid",
+  variation = "solid",
   color = "slate",
   className,
   href = "#",
@@ -42,7 +43,7 @@ export function Button({
   button,
   ...props
 }: {
-  variant?: string;
+  variation?: string;
   color?: string;
   className?: string;
   children?: React.ReactNode;
@@ -52,6 +53,15 @@ export function Button({
   submit?: boolean;
   button?: boolean;
 }) {
+  const variant =
+    field?.variant === "Primary" || variation === "Primary"
+      ? "solid"
+      : field?.variant === "Secondary" || variation === "Secondary"
+      ? "outline"
+      : field?.variant === "Text" || variation === "Text"
+      ? "link"
+      : "solid";
+
   className = clsx(
     baseStyles[variant],
     variantStyles[variant][color],
@@ -67,12 +77,12 @@ export function Button({
   }
 
   if (field) {
-    return <PrismicLink className={className} {...props} field={field} />;
+    return <PrismicNextLink className={className} {...props} field={field} />;
   }
 
   return document ? (
-    <PrismicLink className={className} {...props} document={document} />
+    <PrismicNextLink className={className} {...props} document={document} />
   ) : (
-    <PrismicLink className={className} {...props} href={href} />
+    <PrismicNextLink className={className} {...props} href={href} />
   );
 }
