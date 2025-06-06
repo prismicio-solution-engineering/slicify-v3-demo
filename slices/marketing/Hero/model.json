@@ -43,49 +43,27 @@
             "single": "paragraph,strong,hyperlink"
           }
         },
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "Cta Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": true,
+            "variants": [
+              "Primary",
+              "Secondary",
+              "Text"
+            ]
+          }
+        },
         "anchor": {
           "type": "Text",
           "config": {
             "label": "anchor",
             "placeholder": "optional"
-          }
-        },
-        "buttons": {
-          "type": "Group",
-          "config": {
-            "label": "Buttons",
-            "repeat": true,
-            "fields": {
-              "cta_label": {
-                "type": "Text",
-                "config": {
-                  "label": "Cta Label",
-                  "placeholder": ""
-                }
-              },
-              "cta_link": {
-                "type": "Link",
-                "config": {
-                  "label": "Cta Link",
-                  "placeholder": "",
-                  "allowTargetBlank": false,
-                  "select": null
-                }
-              },
-              "cta_type": {
-                "type": "Select",
-                "config": {
-                  "label": "Cta Type",
-                  "placeholder": "",
-                  "options": [
-                    "Primary",
-                    "Secondary",
-                    "Text"
-                  ],
-                  "default_value": "Primary"
-                }
-              }
-            }
           }
         }
       },

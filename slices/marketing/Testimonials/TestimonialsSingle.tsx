@@ -134,8 +134,15 @@ export default function TestimonialsSingle({
                 </div>
                 <div className="col-end-1 w-16 lg:row-span-4 lg:w-72">
                   <PrismicNextImage
-                    className="rounded-xl bg-indigo-50 lg:rounded-3xl"
+                    className="rounded-xl bg-indigo-50 lg:rounded-3xl hidden lg:block"
                     field={slice.primary.author_image}
+                    width={288}
+                    height={288}
+                  />
+                  <PrismicNextImage
+                    className="rounded-xl bg-indigo-50 lg:rounded-3xl lg:hidden"
+                    field={slice.primary.author_image.mobile}
+                    width={288}
                     height={288}
                   />
                 </div>
