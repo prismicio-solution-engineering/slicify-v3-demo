@@ -71,7 +71,7 @@ export default function Hero({ slice }: HeroProps) {
                 }}
               />
               <div className="mt-10 flex justify-center gap-x-6">
-                {slice.primary.cta_link.map((link) => {
+                {slice.primary.cta_link?.map((link) => {
                   return link.variant === "Secondary" ? (
                     <Button
                       key={link.key}

@@ -3,28 +3,28 @@ import * as prismic from "@prismicio/client";
 import { repositoryName } from "@/slicemachine.config.json";
 import { AllDocumentTypes } from "@/prismicio-types";
 
-// update page by page
+// List of pages to update
 const pagesToUpdate = [
     // {
     //     type: "home_page",
     // },
-    {
-        type: "landing_page",
-        uid: "get-certified",
-    },
+    // {
+    //     type: "landing_page",
+    //     uid: "get-certified",
+    // },
     {
         type: "landing_page",
         uid: "exclusive-access-june-2023",
     },
-    {
-        type: "header",
-    },
-    {
-        type: "footer",
-    },
+    // {
+    //     type: "header",
+    // },
+    // {
+    //     type: "footer",
+    // },
 ]
 
-// Repositories we want to replicate the models from the main repository to.
+// Repositories we want to update
 const SUB_REPOSITORIES = [
     {
         repoName: "slicify-v3-adriana",
@@ -54,10 +54,10 @@ const SUB_REPOSITORIES = [
         repoName: "slicify-v3-michael",
         token: process.env.MICHAEL_WRITE_TOKEN
     },
-    {
-        repoName: "slicify-v3-nathan",
-        token: process.env.NATHAN_WRITE_TOKEN
-    },
+    // {
+    //     repoName: "slicify-v3-nathan",
+    //     token: process.env.NATHAN_WRITE_TOKEN
+    // },
     {
         repoName: "slicify-v3-nathanael",
         token: process.env.NATHANAEL_WRITE_TOKEN
@@ -83,20 +83,9 @@ const SUB_REPOSITORIES = [
 const updateContent = async (template: any, child: any) => {
 
     // Prismic setup
-    // const writeClient = prismic.createWriteClient(child.repoName, {
-    //     writeToken: child.token,
-    // });
-
-    const wClient = prismic.createWriteClient(child.repoName, {
+    const writeClient = prismic.createWriteClient(child.repoName, {
         writeToken: child.token,
-        fetch(url, options) {
-            if (options.headers) {
-                delete options.headers["x-api-key"]
-            }
-            console.log(url, options);
-            return fetch(url, options)
-        }
-    })
+    });
 
     const migration = prismic.createMigration();
 
@@ -104,28 +93,32 @@ const updateContent = async (template: any, child: any) => {
     const client = prismic.createClient("slicify-v3-template");
     const documentFromTemplate = template.uid ?
         await client.getByUID(template.type, template.uid)
-        : await client.getSingle(template.type); // doesn't work for IF
+        : await client.getSingle(template.type);
 
-    // console.log("Doc from template", documentFromTemplate)
+    // TODO : download the jsons to enable updates of IF & assets
+    console.log(documentFromTemplate)
+
     // Update document in sub-repo
     const documentToUpdate = template.uid ?
-        await wClient.getByUID(template.type, template.uid)
-        : await wClient.getSingle(template.type);
+        await writeClient.getByUID(template.type, template.uid)
+        : await writeClient.getSingle(template.type);
 
     const document = migration.updateDocument(documentFromTemplate);
 
     // Execute the prepared migration at the very end of the script
-    await wClient.migrate(migration, {
-        reporter: (event) => console.log("EVENT", event),
+    await writeClient.migrate(migration, {
+        reporter: (event) => console.log(event),
     });
 }
 
-
+// To call 1 by 1, not for each within
 const bulkUpdate = () => {
-    pagesToUpdate.forEach(page => {
-        // console.log("UPDATING repo", SUB_REPOSITORIES[7])
-        updateContent(page, SUB_REPOSITORIES[7])
-    });
+    // SUB_REPOSITORIES.forEach(repo => {
+        pagesToUpdate.forEach(page => {
+            console.log("UPDATING PAGE", page)
+            updateContent(page, SUB_REPOSITORIES[0])
+        });
+    // })
 }
 
 bulkUpdate();
