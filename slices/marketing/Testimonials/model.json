@@ -459,10 +459,16 @@
           "config": {
             "label": "Author image",
             "constraint": {
-              "width": 56,
-              "height": 56
+              "width": 288,
+              "height": 288
             },
-            "thumbnails": []
+            "thumbnails": [
+              {
+                "name": "mobile",
+                "width": 64,
+                "height": 64
+              }
+            ]
           }
         },
         "anchor": {

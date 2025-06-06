@@ -201,10 +201,16 @@ export default function FeaturesHorizontal({
                         }`}
                       >
                         <PrismicNextImage
-                          className="w-full"
+                          className="object-cover hidden md:block"
                           field={feature.feature_screenshot}
-                          priority
-                          sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                          width={1688}
+                          height={856}
+                        />
+                        <PrismicNextImage
+                          className="object-cover md:hidden"
+                          field={feature.feature_screenshot.mobile}
+                          width={390}
+                          height={263}
                         />
                       </div>
                       {rightSide !== true && (
