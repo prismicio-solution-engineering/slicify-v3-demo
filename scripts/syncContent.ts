@@ -54,10 +54,10 @@ const SUB_REPOSITORIES = [
         repoName: "slicify-v3-michael",
         token: process.env.MICHAEL_WRITE_TOKEN
     },
-    {
-        repoName: "slicify-v3-nathan",
-        token: process.env.NATHAN_WRITE_TOKEN
-    },
+    // {
+    //     repoName: "slicify-v3-nathan",
+    //     token: process.env.NATHAN_WRITE_TOKEN
+    // },
     {
         repoName: "slicify-v3-nathanael",
         token: process.env.NATHANAEL_WRITE_TOKEN
@@ -111,12 +111,14 @@ const updateContent = async (template: any, child: any) => {
     });
 }
 
-
+// To call 1 by 1, not for each within
 const bulkUpdate = () => {
-    pagesToUpdate.forEach(page => {
-        console.log("UPDATING PAGE", page)
-        updateContent(page, SUB_REPOSITORIES[7])
-    });
+    // SUB_REPOSITORIES.forEach(repo => {
+        pagesToUpdate.forEach(page => {
+            console.log("UPDATING PAGE", page)
+            updateContent(page, SUB_REPOSITORIES[0])
+        });
+    // })
 }
 
 bulkUpdate();
