@@ -18,6 +18,12 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "team": {
+              "type": "SharedSlice"
+            },
+            "job_list": {
+              "type": "SharedSlice"
+            },
             "pricing": {
               "type": "SharedSlice"
             },

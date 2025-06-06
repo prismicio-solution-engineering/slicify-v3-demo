@@ -118,13 +118,20 @@ function Plan({
       </p>
       <Button
         field={link}
-        variant="solid"
+        variation="solid"
         color={featured ? "white" : "blue"}
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
         Get started
       </Button>
+      {/* <Button
+        field={link}
+        variation="solid"
+        color={featured ? "white" : "blue"}
+        className="mt-8"
+        aria-label={`Get started with the ${name} plan for ${price}`}
+      /> */}
       <div className="mt-10">
         <PrismicRichText
           field={features}
