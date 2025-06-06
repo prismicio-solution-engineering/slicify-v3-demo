@@ -55,16 +55,13 @@
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
-			"link_text": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "View all openings"
-			},
 			"link": {
+				"key": "62feb257-f3d2-4e0c-8bc4-ac4959be0e51",
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
-					"url": "http://twitter.com"
+					"url": "http://twitter.com",
+					"text": "active"
 				}
 			}
 		},
