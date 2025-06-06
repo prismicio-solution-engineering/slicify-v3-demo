@@ -6,7 +6,7 @@ export type HighlightedTextProps =
 
 export default function HighlightedText({ slice }: HighlightedTextProps) {
   return (
-    <section className="max-w-4xl mx-auto">
+    <section className="max-w-4xl px-6 mx-auto">
       <div
         className={`relative pr-9 pl-16 py-6 my-10 mx-auto rounded-md text-base shadow-md ${
           (slice.variation === "information" && "bg-indigo-50") ||

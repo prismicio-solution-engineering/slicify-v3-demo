@@ -65,7 +65,7 @@ export default function Form(slice: Content.FormSliceCentered) {
             className="flex-auto"
           />
           <Button
-            variant="solid"
+            variation="solid"
             color={`${themeColor === "dark" ? "white" : "blue"}`}
             submit
           >

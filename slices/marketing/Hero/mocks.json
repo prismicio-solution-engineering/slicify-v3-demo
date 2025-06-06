@@ -49,57 +49,35 @@
 					}
 				]
 			},
-			"buttons": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"cta_label",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Hello"
-								}
-							],
-							[
-								"cta_type",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "Primary",
-									"type": "Select"
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"cta_label",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Goodbye"
-								}
-							],
-							[
-								"cta_type",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "Secondary"
-								}
-							]
-						]
-					}
-				]
-			},
 			"theme": {
 				"__TYPE__": "FieldContent",
-				"value": "Blue",
-				"type": "Select"
+				"type": "Select",
+				"value": "Light"
+			},
+			"cta_link": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "38e0e55c-d82b-46b7-8c10-5b8854f40bc4",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": "Hello"
+						}
+					},
+					{
+						"key": "4d6b4ea4-0ce7-4c3a-a85c-507fbf8cdff4",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": "Hello",
+							"variant": "Secondary"
+						}
+					}
+				]
 			}
 		},
 		"items": [
@@ -117,6 +95,7 @@
 					[
 						"cta_link",
 						{
+							"key": "83374bd3-d841-4f1c-872e-51cc487c4afc",
 							"__TYPE__": "LinkContent",
 							"value": {
 								"__TYPE__": "ExternalLink",

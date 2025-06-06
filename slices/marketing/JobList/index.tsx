@@ -137,7 +137,7 @@ const JobList = async ({ slice }: JobListProps): Promise<JSX.Element> => {
                   }`}
                   field={slice.primary.link}
                 >
-                  {slice.primary.link_text}{" "}
+                  {slice.primary.link.text}{" "}
                   <span aria-hidden="true">&rarr;</span>
                 </PrismicNextLink>
               </div>
