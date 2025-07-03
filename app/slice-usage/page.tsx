@@ -12,6 +12,7 @@ import {
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState, useEffect, useMemo } from "react";
+import sm from "@/slicemachine.config.json";
 
 interface SliceVariation {
   name: string;
@@ -69,6 +70,34 @@ export default function SliceDashboardPage() {
     }
   };
 
+  const refreshSliceData = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+
+      // Use POST to trigger script execution
+      const response = await fetch("/api/slices", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to refresh slice data");
+      }
+
+      const sliceData = await response.json();
+      setData(sliceData);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Fetch initial slice data
   useEffect(() => {
     fetchSliceData();
   }, []);
@@ -208,11 +237,14 @@ export default function SliceDashboardPage() {
               </p>
             </div>
             <button
-              onClick={fetchSliceData}
-              className="inline-flex items-center px-4 py-2 bg-vibrant-blue text-white rounded-lg hover:bg-blue-700 transition-colors"
+              onClick={refreshSliceData}
+              disabled={loading}
+              className={`inline-flex items-center px-4 py-2 bg-vibrant-blue text-white rounded-lg hover:bg-blue-700 transition-colors ${
+                loading ? "animate-spin" : ""
+              }`}
             >
               <ArrowPathIcon className="h-4 w-4 mr-2" />
-              Refresh
+              {loading ? "Refreshing..." : "Refresh"}
             </button>
           </div>
           {data?.lastUpdated && (
@@ -434,10 +466,10 @@ export default function SliceDashboardPage() {
                                     {variationData.usages &&
                                       variationData.usages.length > 0 && (
                                         <div className="ml-4 space-y-1">
-                                          {variationData.usages
-                                            .slice(0, 5)
-                                            .map(
-                                              (usage: any, index: number) => (
+                                          {variationData.usages.map(
+                                            (usage: any, index: number) => (
+                                              console.log(usage),
+                                              (
                                                 <div
                                                   key={index}
                                                   className="text-xs text-gray-600"
@@ -448,20 +480,18 @@ export default function SliceDashboardPage() {
                                                   {usage.uid && (
                                                     <>
                                                       :{" "}
-                                                      <span className="font-medium">
+                                                      <a
+                                                        className="font-medium"
+                                                        href={`https://${sm.repositoryName}.prismic.io/builder/pages/${usage.id}`}
+                                                        target="_blank"
+                                                      >
                                                         {usage.uid}
-                                                      </span>
+                                                      </a>
                                                     </>
                                                   )}
                                                 </div>
                                               )
-                                            )}
-                                          {variationData.usages.length > 5 && (
-                                            <div className="text-xs text-light-gray0">
-                                              ... and{" "}
-                                              {variationData.usages.length - 5}{" "}
-                                              more
-                                            </div>
+                                            )
                                           )}
                                         </div>
                                       )}

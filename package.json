@@ -3,8 +3,11 @@
   "version": "3.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run slice-analysis && next dev",
+    "dev:no-analysis": "next dev",
+    "slice-analysis": "npx tsx scripts/start-slice-analysis.ts",
+    "slice-analysis:manual": "npx tsx scripts/buildSliceIndex.ts && npx tsx scripts/countSlices.ts",
+    "build": "npm run slice-analysis && next build",
     "start": "next start",
     "lint": "next lint",
     "slicemachine": "start-slicemachine"
