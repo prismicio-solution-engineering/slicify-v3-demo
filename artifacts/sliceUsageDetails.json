@@ -1,0 +1,308 @@
+{
+  "features": {
+    "total": 3,
+    "variations": {
+      "above": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvRxMAACIAAxYT",
+            "uid": "exclusive-access-june-2023",
+            "type": "landing_page"
+          }
+        ]
+      },
+      "rightSide": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvRxMAACIAAxYT",
+            "uid": "exclusive-access-june-2023",
+            "type": "landing_page"
+          }
+        ]
+      },
+      "below": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      }
+    }
+  },
+  "form": {
+    "total": 4,
+    "variations": {
+      "withDetails": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvRxMAACIAAxYT",
+            "uid": "exclusive-access-june-2023",
+            "type": "landing_page"
+          }
+        ]
+      },
+      "simple": {
+        "count": 3,
+        "usages": [
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          }
+        ]
+      }
+    }
+  },
+  "logo_cloud": {
+    "total": 2,
+    "variations": {
+      "default": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvRxMAACIAAxYT",
+            "uid": "exclusive-access-june-2023",
+            "type": "landing_page"
+          }
+        ]
+      },
+      "threeColumns": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "total": 1,
+    "variations": {
+      "singleWithLargeImage": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvRxMAACIAAxYT",
+            "uid": "exclusive-access-june-2023",
+            "type": "landing_page"
+          }
+        ]
+      }
+    }
+  },
+  "faq": {
+    "total": 2,
+    "variations": {
+      "threeColumns": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvRxMAACIAAxYT",
+            "uid": "exclusive-access-june-2023",
+            "type": "landing_page"
+          }
+        ]
+      },
+      "centered": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      }
+    }
+  },
+  "hero": {
+    "total": 2,
+    "variations": {
+      "default": {
+        "count": 2,
+        "usages": [
+          {
+            "id": "ZpTvTxMAACAAAxYs",
+            "uid": "get-certified",
+            "type": "landing_page"
+          },
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "total": 1,
+    "variations": {
+      "withFilter": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      }
+    }
+  },
+  "call_to_action": {
+    "total": 1,
+    "variations": {
+      "withImageRight": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      }
+    }
+  },
+  "featured_websites_list": {
+    "total": 2,
+    "variations": {
+      "default": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      },
+      "autoList": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      }
+    }
+  },
+  "job_list": {
+    "total": 1,
+    "variations": {
+      "default": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvVRMAACIAAxY8",
+            "type": "home_page"
+          }
+        ]
+      }
+    }
+  },
+  "text": {
+    "total": 6,
+    "variations": {
+      "default": {
+        "count": 6,
+        "usages": [
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          }
+        ]
+      }
+    }
+  },
+  "highlighted_text": {
+    "total": 3,
+    "variations": {
+      "information": {
+        "count": 3,
+        "usages": [
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          }
+        ]
+      }
+    }
+  },
+  "article_list": {
+    "total": 3,
+    "variations": {
+      "horizontalList": {
+        "count": 3,
+        "usages": [
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          }
+        ]
+      }
+    }
+  }
+}
