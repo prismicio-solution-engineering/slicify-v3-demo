@@ -9,6 +9,7 @@ import { PrismicNextImage } from "@prismicio/next";
 const iconStyles = cva("", {
   variants: {
     size: {
+      xs: "w-5 h-5",
       sm: "w-8 h-8",
       md: "w-12 h-12",
       lg: "w-16 h-16",

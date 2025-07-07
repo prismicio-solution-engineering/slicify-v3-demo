@@ -10,6 +10,9 @@ export const components = {
   features: dynamic(() => import("./Features")),
   form: dynamic(() => import("./Form")),
   hero: dynamic(() => import("./Hero")),
+  hero_with_side_image_and_features: dynamic(
+    () => import("./HeroWithSideImageAndFeatures"),
+  ),
   job_list: dynamic(() => import("./JobList")),
   logo_cloud: dynamic(() => import("./LogoCloud")),
   pricing: dynamic(() => import("./Pricing")),

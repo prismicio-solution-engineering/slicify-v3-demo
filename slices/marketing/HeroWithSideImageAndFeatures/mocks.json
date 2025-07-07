@@ -1,0 +1,204 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "New Collection Available"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Slicify Merchandise",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Show your love for Slicify with our premium collection of apparel, accessories, and tech gear. Quality products for the modern developer.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"side_image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+					"width": 3456,
+					"height": 3456
+				},
+				"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?rect=288%2C0%2C2880%2C3456&w=500&h=600",
+				"width": 500,
+				"height": 600,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 288,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "form",
+				"credits": null,
+				"__TYPE__": "ImageContent"
+			},
+			"features": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+										"width": 3456,
+										"height": 4320
+									},
+									"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?rect=0%2C432%2C3456%2C3456&w=20&h=20",
+									"width": 20,
+									"height": 20,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 432
+										},
+										"background": "transparent"
+									},
+									"alt": "accurate"
+								}
+							],
+							[
+								"text",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Free Shipping"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"text",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Secure Payment"
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+										"width": 3810,
+										"height": 5715
+									},
+									"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?rect=0%2C953%2C3810%2C3810&w=20&h=20",
+									"width": 20,
+									"height": 20,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 953
+										},
+										"background": "transparent"
+									},
+									"alt": "stove"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"text",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "24/7 Support"
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+										"width": 12288,
+										"height": 16384
+									},
+									"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?rect=0%2C2048%2C12288%2C12288&w=20&h=20",
+									"width": 20,
+									"height": 20,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 2048
+										},
+										"background": "transparent"
+									},
+									"alt": "globe"
+								}
+							]
+						]
+					}
+				]
+			},
+			"buttons": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "e078d853-1b57-4c9c-bdde-9f0a33beaa1c",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": "Shop now",
+							"variant": "Primary"
+						}
+					},
+					{
+						"key": "b878606a-f5df-4bab-b389-9e628619fc52",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": "View collection",
+							"variant": "Secondary"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

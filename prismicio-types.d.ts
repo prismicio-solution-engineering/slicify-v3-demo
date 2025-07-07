@@ -2684,6 +2684,138 @@ type HeroSliceVariation = HeroSliceDefault | HeroSliceTitleOnly;
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
 
 /**
+ * Item in *HeroWithSideImageAndFeatures → Default → Primary → Features*
+ */
+export interface HeroWithSideImageAndFeaturesSliceDefaultPrimaryFeaturesItem {
+  /**
+   * Icon field in *HeroWithSideImageAndFeatures → Default → Primary → Features*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_with_side_image_and_features.default.primary.features[].icon
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  icon: prismic.ImageField<never>;
+
+  /**
+   * Text field in *HeroWithSideImageAndFeatures → Default → Primary → Features*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_with_side_image_and_features.default.primary.features[].text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *HeroWithSideImageAndFeatures → Default → Primary*
+ */
+export interface HeroWithSideImageAndFeaturesSliceDefaultPrimary {
+  /**
+   * Label field in *HeroWithSideImageAndFeatures → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_with_side_image_and_features.default.primary.label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+
+  /**
+   * Title field in *HeroWithSideImageAndFeatures → Default → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_with_side_image_and_features.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Description field in *HeroWithSideImageAndFeatures → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_with_side_image_and_features.default.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Buttons field in *HeroWithSideImageAndFeatures → Default → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_with_side_image_and_features.default.primary.buttons
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  buttons: prismic.Repeatable<
+    prismic.LinkField<
+      string,
+      string,
+      unknown,
+      prismic.FieldState,
+      "Primary" | "Secondary"
+    >
+  >;
+
+  /**
+   * Side Image field in *HeroWithSideImageAndFeatures → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_with_side_image_and_features.default.primary.side_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  side_image: prismic.ImageField<never>;
+
+  /**
+   * Features field in *HeroWithSideImageAndFeatures → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_with_side_image_and_features.default.primary.features[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  features: prismic.GroupField<
+    Simplify<HeroWithSideImageAndFeaturesSliceDefaultPrimaryFeaturesItem>
+  >;
+}
+
+/**
+ * Default variation for HeroWithSideImageAndFeatures Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Standard hero with overline, headline, description, two buttons, right-aligned image, and row of feature items.
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroWithSideImageAndFeaturesSliceDefault =
+  prismic.SharedSliceVariation<
+    "default",
+    Simplify<HeroWithSideImageAndFeaturesSliceDefaultPrimary>,
+    never
+  >;
+
+/**
+ * Slice variation for *HeroWithSideImageAndFeatures*
+ */
+type HeroWithSideImageAndFeaturesSliceVariation =
+  HeroWithSideImageAndFeaturesSliceDefault;
+
+/**
+ * HeroWithSideImageAndFeatures Shared Slice
+ *
+ * - **API ID**: `hero_with_side_image_and_features`
+ * - **Description**: *None*
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroWithSideImageAndFeaturesSlice = prismic.SharedSlice<
+  "hero_with_side_image_and_features",
+  HeroWithSideImageAndFeaturesSliceVariation
+>;
+
+/**
  * Primary content in *JobList → Default → Primary*
  */
 export interface JobListSliceDefaultPrimary {
@@ -4561,6 +4693,11 @@ declare module "@prismicio/client" {
       HeroSliceVariation,
       HeroSliceDefault,
       HeroSliceTitleOnly,
+      HeroWithSideImageAndFeaturesSlice,
+      HeroWithSideImageAndFeaturesSliceDefaultPrimaryFeaturesItem,
+      HeroWithSideImageAndFeaturesSliceDefaultPrimary,
+      HeroWithSideImageAndFeaturesSliceVariation,
+      HeroWithSideImageAndFeaturesSliceDefault,
       JobListSlice,
       JobListSliceDefaultPrimary,
       JobListSliceVariation,

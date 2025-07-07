@@ -1,0 +1,90 @@
+{
+  "type": "SharedSlice",
+  "id": "hero_with_side_image_and_features",
+  "name": "HeroWithSideImageAndFeatures",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard hero with overline, headline, description, two buttons, right-aligned image, and row of feature items.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "labels": [
+              "highlight"
+            ]
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        },
+        "buttons": {
+          "type": "Link",
+          "config": {
+            "label": "Buttons",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": true,
+            "variants": [
+              "Primary",
+              "Secondary"
+            ]
+          }
+        },
+        "side_image": {
+          "type": "Image",
+          "config": {
+            "label": "Side Image",
+            "constraint": {
+              "height": 600,
+              "width": 500
+            }
+          }
+        },
+        "features": {
+          "type": "Group",
+          "config": {
+            "label": "Features",
+            "fields": {
+              "icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "height": 20,
+                    "width": 20
+                  },
+                  "label": "Icon"
+                }
+              },
+              "text": {
+                "type": "Text",
+                "config": {
+                  "label": "Text"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
