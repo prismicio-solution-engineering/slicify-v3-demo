@@ -1,6 +1,6 @@
 {
     "libraries": ["./slices/marketing","./slices/blog"],
     "adapter": "@slicemachine/adapter-next",
-    "repositoryName": "slicify-v3-template-james",
+    "repositoryName": "slicify-v3-cheyma",
     "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
   }
