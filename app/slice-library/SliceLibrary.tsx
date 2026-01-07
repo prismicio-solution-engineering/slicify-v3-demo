@@ -118,10 +118,10 @@ const renderContext: RenderContext = {
   emptyStringInsteadOfNull: false,
   Extension: {
     DocEncoder: {
-      // @ts-expect-error
+      // @ts-expect-error: Property 'encodeDocId' does not exist on type 'typeof Extensions'
       encodeDocId: Extensions.encodeDocId,
     },
-    // @ts-expect-error
+    // @ts-expect-error: Property 'IDEncoders' does not exist on type 'typeof Extensions'
     encoders: Extensions.IDEncoders,
   },
   LinkResolver: {
