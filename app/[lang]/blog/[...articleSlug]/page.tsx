@@ -10,20 +10,20 @@ import { notFound } from "next/navigation";
 import { getLocales } from "@/utils/getLocales";
 import { Metadata } from "next";
 
-type PageParams = { articleSlug: string[]; lang: string };
-
 export async function generateMetadata({
   params,
 }: {
-  params: PageParams;
+  params: Promise<{ articleSlug: string[]; lang: string }>;
 }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const { articleSlug, lang } = resolvedParams;
   const client = createClient();
   // const page = await client
   //   .getByUID(
   //     "blog_article",
-  //     params.articleSlug[params.articleSlug.length - 1],
+  //     articleSlug[articleSlug.length - 1],
   //     {
-  //       lang: params.lang,
+  //       lang: lang,
   //     }
   //   )
   //   .catch(() => notFound());
@@ -32,9 +32,9 @@ export async function generateMetadata({
   try {
     page = await client.getByUID(
       "blog_article",
-      params.articleSlug[params.articleSlug.length - 1],
+      articleSlug[articleSlug.length - 1],
       {
-        lang: params.lang,
+        lang: lang,
       }
     );
   } catch (error) {
@@ -42,7 +42,7 @@ export async function generateMetadata({
     try {
       page = await client.getByUID(
         "blog_article",
-        params.articleSlug[params.articleSlug.length - 1],
+        articleSlug[articleSlug.length - 1],
         {
           lang: "en-us",
         }
@@ -57,8 +57,14 @@ export async function generateMetadata({
   };
 }
 
-export default async function BlogArticle({ params }: { params: PageParams }) {
+export default async function BlogArticle({
+  params,
+}: {
+  params: Promise<{ articleSlug: string[]; lang: string }>;
+}) {
   const locales = await getLocales();
+  const resolvedParams = await params;
+  const { articleSlug, lang } = resolvedParams;
 
   const client = createClient();
 
@@ -66,15 +72,15 @@ export default async function BlogArticle({ params }: { params: PageParams }) {
   try {
     page = await client.getByUID<Content.BlogArticleDocument>(
       "blog_article",
-      params.articleSlug[params.articleSlug.length - 1],
-      { graphQuery: blogArticleGraphQuery, lang: params.lang }
+      articleSlug[articleSlug.length - 1],
+      { graphQuery: blogArticleGraphQuery, lang: lang }
     );
   } catch (error) {
     // Try to fall back to the default locale (en-us)
     try {
       page = await client.getByUID<Content.BlogArticleDocument>(
         "blog_article",
-        params.articleSlug[params.articleSlug.length - 1],
+        articleSlug[articleSlug.length - 1],
         { graphQuery: blogArticleGraphQuery, lang: "en-us" }
       );
     } catch (fallbackError) {
@@ -85,7 +91,7 @@ export default async function BlogArticle({ params }: { params: PageParams }) {
   const [header, footer, languages] = await Promise.all([
     client
       .getSingle<Content.HeaderDocument>("header", {
-        lang: params.lang,
+        lang: lang,
       })
       .catch(() =>
         client.getSingle<Content.HeaderDocument>("header", {
@@ -94,7 +100,7 @@ export default async function BlogArticle({ params }: { params: PageParams }) {
       ),
     client
       .getSingle<Content.FooterDocument>("footer", {
-        lang: params.lang,
+        lang: lang,
       })
       .catch(() =>
         client.getSingle<Content.FooterDocument>("footer", {

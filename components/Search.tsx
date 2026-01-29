@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, MouseEventHandler, useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { KeyTextField } from "@prismicio/client";
@@ -12,10 +12,7 @@ interface SearchProps {
   }[];
 }
 
-export const Search: React.FC<SearchProps> = ({
-  languages,
-  title,
-}) => {
+export const Search: React.FC<SearchProps> = ({ languages, title }) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
@@ -25,7 +22,7 @@ export const Search: React.FC<SearchProps> = ({
   const cancelButtonRef = useRef(null);
 
   const [query, setQuery] = useState(searchParams.get("query") || "");
-  
+
   const handleSearch = () => {
     const params = new URLSearchParams(searchParams);
     // If on the search results page, call the onSearch callback in Header
