@@ -14,14 +14,17 @@ type PageParams = { lang: string };
 export async function generateMetadata({
   params,
 }: {
-  params: PageParams;
+  params: Promise<PageParams>;
 }): Promise<Metadata> {
   const client = createClient();
+
+  const resolvedParams = await params;
+  const { lang } = resolvedParams;
 
   let page;
   try {
     page = await client.getSingle("search", {
-      lang: params.lang,
+      lang: lang,
     });
   } catch (error) {
     // Try to fall back to the default locale (en-us)
@@ -41,16 +44,19 @@ export async function generateMetadata({
 }
 
 export default async function SearchPage({
-  params: { lang },
+  params,
   searchParams,
 }: {
-  params: { lang: string };
-  searchParams: { query?: string; page?: string };
+  params: Promise<{ lang: string }>;
+  searchParams: Promise<{ query?: string; page?: string }>;
 }) {
+  const resolvedParams = await params;
+  const { lang } = resolvedParams;
+  const searchParamsResolved = await searchParams;
   const locales = await getLocales();
 
   // Get the initial query parameter from the URL
-  const initialQuery = searchParams.query || "";
+  const initialQuery = searchParamsResolved.query || "";
 
   const client = createClient();
 
@@ -94,10 +100,10 @@ export default async function SearchPage({
   // Pass the initialQuery to performSearch
   const results = await performSearch(
     initialQuery ? initialQuery.trim() : "",
-    (lang = lang)
+    lang
   );
   const languages = await getLanguages(page, client, locales);
-  if (searchParams.query) {
+  if (searchParamsResolved.query) {
     languages.forEach(function (language, index) {
       languages[index].url = language.url + "?query=" + initialQuery;
     });
