@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { PrismicLink } from "@prismicio/react";
 import type * as prismic from "@prismicio/client";
 import type * as clsxT from "clsx";
 import { PrismicNextLink } from "@prismicio/next";
