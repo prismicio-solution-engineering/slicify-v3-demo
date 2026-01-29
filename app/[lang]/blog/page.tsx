@@ -14,14 +14,15 @@ type PageParams = { lang: string };
 export async function generateMetadata({
   params,
 }: {
-  params: PageParams;
+  params: Promise<PageParams>;
 }): Promise<Metadata> {
+  const resolvedParams = await params;
   const client = createClient();
 
   let page;
   try {
     page = await client.getSingle("blog_index", {
-      lang: params.lang,
+      lang: resolvedParams.lang,
     });
   } catch (error) {
     // Try to fall back to the default locale (en-us)
@@ -41,10 +42,12 @@ export async function generateMetadata({
 }
 
 export default async function BlogIndex({
-  params: { lang },
+  params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
+  const resolvedParams = await params;
+  const { lang } = resolvedParams;
   const locales = await getLocales();
 
   const client = createClient();

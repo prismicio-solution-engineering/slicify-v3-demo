@@ -5,6 +5,8 @@ import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { ThemeContainer } from "@/components/Theme";
 
+import type { JSX } from "react";
+
 /**
  * Props for `JobList`.
  */

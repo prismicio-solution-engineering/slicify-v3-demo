@@ -13,13 +13,17 @@ type PageParams = { lang: string };
 export async function generateMetadata({
   params,
 }: {
-  params: PageParams;
+  params: Promise<PageParams>;
 }): Promise<Metadata> {
   const client = createClient();
+
+  const resolvedParams = await params;
+  const { lang } = resolvedParams;
+
   let page;
   try {
     page = await client.getSingle("home_page", {
-      lang: params.lang,
+      lang: lang,
     });
   } catch (error) {
     // Try to fall back to the default locale (en-us)
@@ -39,10 +43,13 @@ export async function generateMetadata({
 }
 
 export default async function Home({
-  params: { lang },
+  params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
+  const resolvedParams = await params;
+  const { lang } = resolvedParams;
+
   const locales = await getLocales();
 
   const client = createClient();
