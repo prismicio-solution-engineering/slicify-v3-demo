@@ -1,6 +1,6 @@
 {
     "libraries": ["./slices/marketing","./slices/blog"],
     "adapter": "@slicemachine/adapter-next",
-    "repositoryName": "slicify-v3-template",
+    "repositoryName": "slicify-v3-brenda",
     "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
   }
