@@ -3,7 +3,8 @@
   "version": "3.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run slice-analysis && next dev",
+    "dev": "npm run slice-analysis && concurrently \"npm:next:dev\" \"npm:slicemachine\" --names \"next,slicemachine\" --prefix-colors blue,magenta",
+    "next:dev": "next dev",
     "dev:no-analysis": "next dev",
     "slice-analysis": "npx tsx scripts/start-slice-analysis.ts",
     "slice-analysis:manual": "npx tsx scripts/buildSliceIndex.ts && npx tsx scripts/countSlices.ts",
