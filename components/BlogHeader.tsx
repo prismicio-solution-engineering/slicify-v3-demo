@@ -1,6 +1,5 @@
 import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-import { UnderlineDoodle } from "@/components/UnderlineDoodle";
 import { BlogArticleDocument } from "@/prismicio-types";
 import { Content } from "@prismicio/client";
 
@@ -34,7 +33,7 @@ export function BlogHeader(
                 <h1 className="font-display text-3xl sm:text-5xl font-medium tracking-tight text-dark-blue">
                   {children}
                 </h1>
-              )
+              ),
             }}
           />
           <PrismicRichText
