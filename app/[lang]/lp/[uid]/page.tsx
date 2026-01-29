@@ -13,19 +13,21 @@ type PageParams = { uid: string; lang: string };
 export async function generateMetadata({
   params,
 }: {
-  params: PageParams;
+  params: Promise<PageParams>;
 }): Promise<Metadata> {
   const client = createClient();
 
+  const resolvedParams = await params;
+  const { uid, lang } = resolvedParams;
   let page;
   try {
-    page = await client.getByUID("landing_page", params.uid, {
-      lang: params.lang,
+    page = await client.getByUID("landing_page", uid, {
+      lang: lang,
     });
   } catch (error) {
     // Try to fall back to the default locale (en-us)
     try {
-      page = await client.getByUID("landing_page", params.uid, {
+      page = await client.getByUID("landing_page", uid, {
         lang: "en-us",
       });
     } catch (fallbackError) {
@@ -38,7 +40,13 @@ export async function generateMetadata({
     description: page.data.meta_description || "",
   };
 }
-export default async function LandingPage({ params }: { params: PageParams }) {
+export default async function LandingPage({
+  params,
+}: {
+  params: Promise<PageParams>;
+}) {
+  const resolvedParams = await params;
+  const { uid, lang } = resolvedParams;
   const locales = await getLocales();
 
   const client = createClient();
@@ -47,15 +55,15 @@ export default async function LandingPage({ params }: { params: PageParams }) {
   try {
     page = await client.getByUID<Content.LandingPageDocument>(
       "landing_page",
-      params.uid,
-      { lang: params.lang }
+      uid,
+      { lang: lang }
     );
   } catch (error) {
     // Try to fall back to the default locale (en-us)
     try {
       page = await client.getByUID<Content.LandingPageDocument>(
         "landing_page",
-        params.uid,
+        uid,
         { lang: "en-us" }
       );
     } catch (fallbackError) {
@@ -66,7 +74,7 @@ export default async function LandingPage({ params }: { params: PageParams }) {
   const [header, footer, languages] = await Promise.all([
     client
       .getSingle<Content.HeaderDocument>("header", {
-        lang: params.lang,
+        lang: lang,
       })
       .catch(() =>
         client.getSingle<Content.HeaderDocument>("header", {
@@ -75,7 +83,7 @@ export default async function LandingPage({ params }: { params: PageParams }) {
       ),
     client
       .getSingle<Content.FooterDocument>("footer", {
-        lang: params.lang,
+        lang: lang,
       })
       .catch(() =>
         client.getSingle<Content.FooterDocument>("footer", {
