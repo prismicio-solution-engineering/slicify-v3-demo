@@ -1,5 +1,4 @@
 "use client";
-
 import type { Content } from "@prismicio/client";
 import { PrismicRichText } from "@prismicio/react";
 import { Tab } from "@headlessui/react";
@@ -7,12 +6,13 @@ import clsx from "clsx";
 import { Container } from "@/components/Container";
 import { asText } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
-import { Simplify } from "@prismicio/types/dist/value/types";
 import {
   FeaturesSliceAbovePrimaryFeaturesItem,
   FeaturesSliceBelowPrimaryFeaturesItem,
 } from "@/prismicio-types";
 import { ThemeContainer } from "@/components/Theme";
+
+import type { JSX } from "react";
 
 function Feature({
   feature,
@@ -22,8 +22,8 @@ function Feature({
   ...props
 }: {
   feature: (
-    | Simplify<FeaturesSliceBelowPrimaryFeaturesItem>
-    | Simplify<FeaturesSliceAbovePrimaryFeaturesItem>
+    | FeaturesSliceBelowPrimaryFeaturesItem
+    | FeaturesSliceAbovePrimaryFeaturesItem
   ) & { eyebrowElement?: JSX.Element };
   isActive: boolean;
   className: string;
