@@ -13,7 +13,12 @@ export const ShowcaseCard = ({ website }: { website: Website }) => {
           <img
             className="opacity-100 scale-100 transition-all ease-in-out duration-500 object-cover"
             src={website?.screenshot?.url}
-            alt={website?.screenshot?.alt}
+            // alt={website?.screenshot?.alt}
+            // alt={
+            //   website?.screenshot?.alt
+            //     ? website?.screenshot?.alt
+            //     : `${website?.name} website screenshot`
+            // }
             sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
           />
         </div>
