@@ -11,7 +11,9 @@
     "build": "npm run slice-analysis && next build",
     "start": "next start",
     "lint": "next lint",
-    "slicemachine": "start-slicemachine"
+    "slicemachine": "start-slicemachine",
+    "test:a11y": "playwright test",
+    "build:ci": "next build"
   },
   "dependencies": {
     "@headlessui/react": "2.2.9",
@@ -38,6 +40,8 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "@playwright/test": "^1.58.2",
     "@slicemachine/adapter-next": "0.3.95",
     "@types/negotiator": "^0.6.3",
     "@types/react-syntax-highlighter": "^15.5.7",
