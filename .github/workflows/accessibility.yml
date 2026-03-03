@@ -30,9 +30,6 @@ jobs:
       - name: Build Next.js app
         run: npm run build:ci
 
-      - name: Start Next.js server
-        run: npm run start
-
       - name: Run accessibility tests
         run: npm run test:a11y
 
