@@ -2,27 +2,27 @@
   "id": "pricing",
   "type": "SharedSlice",
   "name": "Pricing",
-  "description": "Pricing",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Pricing",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/pricing/default/dad1a734c729a591c3facef548334594d5040373.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Pricing",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -30,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2,strong,em"
+            "single": "heading2,strong,em",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -39,8 +39,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em"
+            "single": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "plans": {
@@ -68,8 +68,8 @@
                 "config": {
                   "label": "Description",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph,strong,em"
+                  "single": "paragraph,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "register_link": {
@@ -78,8 +78,8 @@
                   "label": "Register Link",
                   "placeholder": "",
                   "select": null,
-                  "allowText": true,
-                  "allowTargetBlank": true
+                  "allowTargetBlank": true,
+                  "allowText": true
                 }
               },
               "features": {
@@ -87,8 +87,8 @@
                 "config": {
                   "label": "Features",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "strong,em,list-item"
+                  "multi": "strong,em,list-item",
+                  "allowTargetBlank": true
                 }
               },
               "featured": {
@@ -111,28 +111,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "withPromo",
       "name": "With Promo",
+      "description": "Pricing",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/pricing/withPromo/04699064c499470c5568c70f901856d95cf2253f.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Pricing",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -140,8 +140,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2,strong,em"
+            "single": "heading2,strong,em",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -149,8 +149,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em"
+            "single": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "plans": {
@@ -178,8 +178,8 @@
                 "config": {
                   "label": "Description",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph,strong,em"
+                  "single": "paragraph,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "register_link": {
@@ -188,8 +188,8 @@
                   "label": "Register Link",
                   "placeholder": "",
                   "select": null,
-                  "allowText": true,
-                  "allowTargetBlank": true
+                  "allowTargetBlank": true,
+                  "allowText": true
                 }
               },
               "features": {
@@ -197,8 +197,8 @@
                 "config": {
                   "label": "Features",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "strong,em,list-item"
+                  "multi": "strong,em,list-item",
+                  "allowTargetBlank": true
                 }
               }
             }
@@ -209,8 +209,8 @@
           "config": {
             "label": "Promo Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading3,strong,em"
+            "single": "heading3,strong,em",
+            "allowTargetBlank": true
           }
         },
         "promo_description": {
@@ -218,8 +218,8 @@
           "config": {
             "label": "Promo Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,em"
+            "single": "paragraph,em",
+            "allowTargetBlank": true
           }
         },
         "promo_link": {
@@ -228,8 +228,8 @@
             "label": "Promo Link",
             "placeholder": "",
             "select": null,
-            "allowText": true,
-            "allowTargetBlank": true
+            "allowTargetBlank": true,
+            "allowText": true
           }
         },
         "anchor": {
@@ -240,28 +240,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "withFilter",
       "name": "With Filter",
+      "description": "Pricing",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/pricing/withFilter/295f3486f661d68a40f249a2d6f0571c2ff9d8a5.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Pricing",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -269,8 +269,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2,strong,em"
+            "single": "heading2,strong,em",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -278,8 +278,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em"
+            "single": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "monthly_label": {
@@ -328,8 +328,8 @@
                 "config": {
                   "label": "Description",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph,strong,em"
+                  "single": "paragraph,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "register_link": {
@@ -347,8 +347,8 @@
                 "config": {
                   "label": "Features",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "strong,em,list-item"
+                  "multi": "strong,em,list-item",
+                  "allowTargetBlank": true
                 }
               }
             }
@@ -359,8 +359,8 @@
           "config": {
             "label": "Promo Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading3,strong,em"
+            "single": "heading3,strong,em",
+            "allowTargetBlank": true
           }
         },
         "promo_description": {
@@ -368,8 +368,8 @@
           "config": {
             "label": "Promo Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "promo_link": {
@@ -390,8 +390,8 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     }
-  ]
+  ],
+  "description": "Pricing"
 }

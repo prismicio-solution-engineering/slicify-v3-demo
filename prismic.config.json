@@ -1,0 +1,25 @@
+{
+  "repositoryName": "slicify-v3-aymen",
+  "libraries": [
+    "./slices/marketing",
+    "./slices/blog"
+  ],
+  "routes": [
+    {
+      "type": "blog_article",
+      "path": "/blog-article/:uid"
+    },
+    {
+      "type": "blog_index",
+      "path": "/blog-index"
+    },
+    {
+      "type": "home_page",
+      "path": "/home-page"
+    },
+    {
+      "type": "landing_page",
+      "path": "/landing-page/:uid"
+    }
+  ]
+}

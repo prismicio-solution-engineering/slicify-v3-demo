@@ -2,21 +2,21 @@
   "id": "highlighted_text",
   "type": "SharedSlice",
   "name": "HighlightedText",
-  "description": "HighlightedText",
   "variations": [
     {
       "id": "information",
       "name": "Information",
+      "description": "HighlightedText",
+      "imageUrl": "https://images.prismic.io/slicify-v2-template/shared-slices/highlighted_text/information/70e62d8b124c0ab13f631b838b3840df9e7d7cea.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "HighlightedText",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading3",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": "This is where it all begins...",
+            "single": "heading3"
           }
         },
         "content": {
@@ -24,27 +24,27 @@
           "config": {
             "label": "Content",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item"
+            "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item",
+            "allowTargetBlank": true
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     },
     {
       "id": "warning",
       "name": "Warning",
+      "description": "HighlightedText",
+      "imageUrl": "https://images.prismic.io/slicify-v2-template/shared-slices/highlighted_text/warning/e7244b03f4dfae07eac624a16fe6831341ca287e.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "HighlightedText",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading3",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": "This is where it all begins...",
+            "single": "heading3"
           }
         },
         "content": {
@@ -52,27 +52,27 @@
           "config": {
             "label": "Content",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item"
+            "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item",
+            "allowTargetBlank": true
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     },
     {
       "id": "update",
       "name": "Update",
+      "description": "HighlightedText",
+      "imageUrl": "https://images.prismic.io/slicify-v2-template/shared-slices/highlighted_text/update/d82865869d63a6d9fcabcc4119bbafc9b59f87c7.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "HighlightedText",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading3",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": "This is where it all begins...",
+            "single": "heading3"
           }
         },
         "content": {
@@ -80,13 +80,13 @@
           "config": {
             "label": "Content",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item"
+            "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item",
+            "allowTargetBlank": true
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     }
-  ]
+  ],
+  "description": "HighlightedText"
 }

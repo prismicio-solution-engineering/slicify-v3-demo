@@ -2,27 +2,27 @@
   "id": "call_to_action",
   "type": "SharedSlice",
   "name": "CallToAction",
-  "description": "CallToAction",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "CallToAction",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/call_to_action/default/16086e2f8eae731f51a149214496d87cf1c064bb.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "CallToAction",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -30,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2,strong"
+            "single": "heading2,strong",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -39,8 +39,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong"
+            "multi": "paragraph,strong",
+            "allowTargetBlank": true
           }
         },
         "cta_link": {
@@ -49,8 +49,8 @@
             "label": "Cta Link",
             "placeholder": "",
             "select": null,
-            "allowText": true,
             "allowTargetBlank": true,
+            "allowText": true,
             "variants": [
               "Primary",
               "Secondary",
@@ -66,28 +66,28 @@
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     },
     {
       "id": "withImageRight",
       "name": "With Image Right",
+      "description": "CallToAction",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/call_to_action/withImageRight/ac42e0c6fdf4b20bad96dc738aabb8897abf020f.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "CallToAction",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -95,8 +95,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -104,8 +104,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong"
+            "multi": "paragraph,strong",
+            "allowTargetBlank": true
           }
         },
         "cta_link": {
@@ -143,28 +143,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "withImageLeft",
       "name": "With Image Left",
+      "description": "CallToAction",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/call_to_action/withImageLeft/99fbf8a6982c473c8ded5ffcdfdc873f60cbf8d3.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "CallToAction",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -172,8 +172,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -181,8 +181,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong"
+            "multi": "paragraph,strong",
+            "allowTargetBlank": true
           }
         },
         "cta_link": {
@@ -220,8 +220,8 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     }
-  ]
+  ],
+  "description": "CallToAction"
 }

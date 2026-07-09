@@ -2,8 +2,6 @@
   "id": "footer",
   "label": "Footer",
   "repeatable": false,
-  "status": true,
-  "format": "custom",
   "json": {
     "Main": {
       "logo": {
@@ -66,8 +64,8 @@
         "config": {
           "label": "Copyright",
           "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,strong,em,hyperlink"
+          "single": "paragraph,strong,em,hyperlink",
+          "allowTargetBlank": true
         }
       },
       "slices": {
@@ -78,5 +76,7 @@
         }
       }
     }
-  }
+  },
+  "status": true,
+  "format": "custom"
 }

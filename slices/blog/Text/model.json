@@ -2,31 +2,31 @@
   "id": "text",
   "type": "SharedSlice",
   "name": "Text",
-  "description": "Text",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Text",
+      "imageUrl": "https://images.prismic.io/slicify-v2-template/shared-slices/text/default/f79c2d822f7ba942c61ef7b3406f29343a8140f4.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Text",
       "primary": {
         "text_section": {
           "type": "StructuredText",
           "config": {
             "label": "Text Section",
             "placeholder": "",
-            "allowTargetBlank": true,
             "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
             "labels": [
               "highlight",
               "inline code"
-            ]
+            ],
+            "allowTargetBlank": true
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     }
-  ]
+  ],
+  "description": "Text"
 }

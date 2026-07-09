@@ -2,22 +2,22 @@
   "id": "article_list",
   "type": "SharedSlice",
   "name": "ArticleList",
-  "description": "ArticleList",
   "variations": [
     {
       "id": "horizontalList",
       "name": "Horizontal list",
+      "description": "ArticleList",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/article_list/horizontalList/29999da02e12ca83af650751f353d61542d3dd1a.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "ArticleList",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -25,8 +25,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,strong,em"
+            "multi": "paragraph,preformatted,strong,em",
+            "allowTargetBlank": true
           }
         },
         "articles": {
@@ -48,8 +48,8 @@
             }
           }
         }
-      },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      }
     }
-  ]
+  ],
+  "description": "ArticleList"
 }

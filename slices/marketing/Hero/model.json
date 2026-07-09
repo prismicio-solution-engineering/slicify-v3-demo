@@ -2,27 +2,27 @@
   "id": "hero",
   "type": "SharedSlice",
   "name": "Hero",
-  "description": "Hero",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Hero",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/hero/default/13478786ec6fd3cf12b841066606ef8a8e79ab31.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Hero",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -30,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading1,strong"
+            "single": "heading1,strong",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -39,8 +39,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,hyperlink"
+            "single": "paragraph,strong,hyperlink",
+            "allowTargetBlank": true
           }
         },
         "cta_link": {
@@ -67,28 +67,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "titleOnly",
       "name": "Title Only",
+      "description": "Hero",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/hero/titleOnly/23c20d8f39da50472fbd621813c822f11ab9398e.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Hero",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -96,8 +96,8 @@
           "config": {
             "label": "Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading1,strong"
+            "single": "heading1,strong",
+            "allowTargetBlank": true
           }
         },
         "anchor": {
@@ -108,8 +108,8 @@
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     }
-  ]
+  ],
+  "description": "Hero"
 }

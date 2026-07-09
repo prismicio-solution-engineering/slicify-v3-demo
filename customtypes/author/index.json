@@ -2,7 +2,6 @@
   "id": "author",
   "label": "Author",
   "repeatable": true,
-  "status": true,
   "json": {
     "Main": {
       "uid": {
@@ -39,5 +38,6 @@
       }
     }
   },
+  "status": true,
   "format": "custom"
 }

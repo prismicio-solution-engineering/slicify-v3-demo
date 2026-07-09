@@ -2,27 +2,27 @@
   "id": "testimonials",
   "type": "SharedSlice",
   "name": "Testimonials",
-  "description": "Testimonials",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Testimonials",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/testimonials/default/40b9d3df4d2bb864f3d06e9cf3d371b99ede83fb.jpg?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Testimonials",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -30,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -39,8 +39,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "allowTargetBlank": true
           }
         },
         "quotes": {
@@ -54,8 +54,8 @@
                 "config": {
                   "label": "Quote",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "author": {
@@ -63,8 +63,8 @@
                 "config": {
                   "label": "Author",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "author_role": {
@@ -72,8 +72,8 @@
                 "config": {
                   "label": "Author role",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "author_image": {
@@ -98,28 +98,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "scrollingCards",
       "name": "Scrolling cards",
+      "description": "Testimonials",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/testimonials/scrollingCards/cf0a3af357d267ffe640142bfa591bde2c79d26e.jpg?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Testimonials",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -127,8 +127,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -136,8 +136,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "allowTargetBlank": true
           }
         },
         "quotes": {
@@ -151,8 +151,8 @@
                 "config": {
                   "label": "Quote",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "author": {
@@ -160,8 +160,8 @@
                 "config": {
                   "label": "Author",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "author_role": {
@@ -169,8 +169,8 @@
                 "config": {
                   "label": "Author role",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "author_image": {
@@ -195,28 +195,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "twoColumnsWithSeparator",
       "name": "Two Columns With Separator",
+      "description": "Testimonials",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/testimonials/twoColumnsWithSeparator/68c1fd428bce9499693f230f46ecb4de19a9f722.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Testimonials",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "company_logo_column_1": {
@@ -234,8 +234,8 @@
           "config": {
             "label": "Quote column 1",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_column_1": {
@@ -243,8 +243,8 @@
           "config": {
             "label": "Author column 1",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_role_column_1": {
@@ -252,8 +252,8 @@
           "config": {
             "label": "Author role column 1",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_image_column_1": {
@@ -282,8 +282,8 @@
           "config": {
             "label": "Quote column 2",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_column_2": {
@@ -291,8 +291,8 @@
           "config": {
             "label": "Author column 2",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_role_column_2": {
@@ -300,8 +300,8 @@
           "config": {
             "label": "Author role column 2",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_image_column_2": {
@@ -323,28 +323,28 @@
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     },
     {
       "id": "singleCentered",
       "name": "Single Centered",
+      "description": "Testimonials",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/testimonials/singleCentered/4bfbb2298586fc39c0d73743668761ec4ef6c689.jpg?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Testimonials",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "company_logo": {
@@ -362,8 +362,8 @@
           "config": {
             "label": "Quote",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author": {
@@ -371,8 +371,8 @@
           "config": {
             "label": "Author",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_role": {
@@ -380,8 +380,8 @@
           "config": {
             "label": "Author role",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_image": {
@@ -403,28 +403,28 @@
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     },
     {
       "id": "singleWithLargeImage",
       "name": "Single With Large Image",
+      "description": "Testimonials",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/testimonials/singleWithLargeImage/3d650a166e1da9b05a6839103b8ddfbc8f7a0f0f.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Testimonials",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "quote": {
@@ -432,8 +432,8 @@
           "config": {
             "label": "Quote",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author": {
@@ -441,8 +441,8 @@
           "config": {
             "label": "Author",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_role": {
@@ -450,8 +450,8 @@
           "config": {
             "label": "Author role",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "author_image": {
@@ -479,8 +479,8 @@
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     }
-  ]
+  ],
+  "description": "Testimonials"
 }

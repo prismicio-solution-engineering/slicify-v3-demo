@@ -2,8 +2,6 @@
   "id": "blog_article",
   "label": "Blog Article",
   "repeatable": true,
-  "status": true,
-  "format": "page",
   "json": {
     "Main": {
       "uid": {
@@ -18,8 +16,8 @@
         "config": {
           "label": "Title",
           "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "heading1,strong"
+          "single": "heading1,strong",
+          "allowTargetBlank": true
         }
       },
       "author": {
@@ -27,7 +25,9 @@
         "config": {
           "label": "Author",
           "select": "document",
-          "customtypes": ["author"]
+          "customtypes": [
+            "author"
+          ]
         }
       },
       "excerpt": {
@@ -35,8 +35,8 @@
         "config": {
           "label": "Excerpt",
           "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "allowTargetBlank": true
         }
       },
       "featured_image": {
@@ -52,7 +52,9 @@
         "config": {
           "label": "Category",
           "select": "document",
-          "customtypes": ["blog_category"]
+          "customtypes": [
+            "blog_category"
+          ]
         }
       },
       "slices": {
@@ -98,24 +100,25 @@
         }
       },
       "canonicalLink": {
+        "type": "Link",
         "config": {
           "label": "CanonicalLink",
           "placeholder": "",
           "select": "web",
           "allowTargetBlank": false
-        },
-        "type": "Link"
+        }
       },
       "social_cards": {
         "type": "Group",
         "config": {
+          "label": "Social Cards - Facebook & Twitter",
           "fields": {
             "social_card_image": {
               "type": "Image",
               "config": {
+                "label": "Social Card Image",
                 "constraint": {},
-                "thumbnails": [],
-                "label": "Social Card Image"
+                "thumbnails": []
               }
             },
             "social_card_title": {
@@ -130,10 +133,11 @@
                 "label": "Social card description"
               }
             }
-          },
-          "label": "Social Cards - Facebook & Twitter"
+          }
         }
       }
     }
-  }
+  },
+  "status": true,
+  "format": "page"
 }

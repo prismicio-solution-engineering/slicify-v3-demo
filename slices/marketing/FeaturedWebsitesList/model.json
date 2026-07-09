@@ -2,28 +2,27 @@
   "id": "featured_websites_list",
   "type": "SharedSlice",
   "name": "FeaturedWebsitesList",
-  "description": "FeaturedWebsitesList",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/featured_websites_list/default/568af39820d0d8c2b79cbb32bcc1d278e73e84c5.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -31,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2,strong"
+            "single": "heading2,strong",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -40,8 +39,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "websites": {
@@ -53,8 +52,8 @@
               "website": {
                 "type": "IntegrationFields",
                 "config": {
-                  "catalog": "slicify--prismic_websites",
-                  "label": "Prismic websites"
+                  "label": "Prismic websites",
+                  "catalog": "slicify--prismic_websites"
                 }
               }
             }
@@ -73,23 +72,23 @@
     {
       "id": "autoList",
       "name": "Auto List",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/featured_websites_list/autoList/d36f45d7998c80de588d939ba84841ca77ebaf82.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -97,8 +96,8 @@
           "config": {
             "label": "Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2,strong"
+            "single": "heading2,strong",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -106,8 +105,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "anchor": {
@@ -120,5 +119,6 @@
       },
       "items": {}
     }
-  ]
+  ],
+  "description": "FeaturedWebsitesList"
 }

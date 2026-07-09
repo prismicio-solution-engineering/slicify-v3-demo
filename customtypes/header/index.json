@@ -2,8 +2,6 @@
   "id": "header",
   "label": "Header",
   "repeatable": false,
-  "status": true,
-  "format": "custom",
   "json": {
     "Main": {
       "logo": {
@@ -28,9 +26,12 @@
                 "label": "Link",
                 "placeholder": "",
                 "select": null,
-                "allowText": true,
                 "allowTargetBlank": true,
-                "variants": ["Text", "Button"]
+                "allowText": true,
+                "variants": [
+                  "Text",
+                  "Button"
+                ]
               }
             }
           }
@@ -47,9 +48,12 @@
                 "label": "Link",
                 "placeholder": "",
                 "select": null,
-                "allowText": true,
                 "allowTargetBlank": true,
-                "variants": ["Text", "Button"]
+                "allowText": true,
+                "variants": [
+                  "Text",
+                  "Button"
+                ]
               }
             }
           }
@@ -72,5 +76,7 @@
         }
       }
     }
-  }
+  },
+  "status": true,
+  "format": "custom"
 }

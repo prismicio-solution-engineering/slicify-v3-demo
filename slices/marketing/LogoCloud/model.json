@@ -2,27 +2,27 @@
   "id": "logo_cloud",
   "type": "SharedSlice",
   "name": "LogoCloud",
-  "description": "LogoCloud",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "LogoCloud",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/logo_cloud/default/f235c12d477115e67336aed2d505fc76b2755046.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "LogoCloud",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -30,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "logos": {
@@ -61,28 +61,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "threeColumns",
       "name": "Three Columns",
+      "description": "LogoCloud",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/logo_cloud/threeColumns/1fc8818fd68b0e39803bcbb576eb119bf2c66c2c.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "LogoCloud",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -90,8 +90,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "logos": {
@@ -121,28 +121,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "single",
       "name": "Single",
+      "description": "LogoCloud",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/logo_cloud/single/337f72e15e663f8fdb662413761abddc58bfe90e.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "LogoCloud",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -150,8 +150,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "paragraph",
+            "allowTargetBlank": true
           }
         },
         "logo": {
@@ -172,8 +172,8 @@
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     }
-  ]
+  ],
+  "description": "LogoCloud"
 }

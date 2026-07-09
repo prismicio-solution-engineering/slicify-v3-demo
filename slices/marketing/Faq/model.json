@@ -2,27 +2,27 @@
   "id": "faq",
   "type": "SharedSlice",
   "name": "Faq",
-  "description": "Faq",
   "variations": [
     {
       "id": "twoColumns",
       "name": "Two Columns",
+      "description": "Faq",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/faq/twoColumns/3d462f361e33cbee9f058056725a764072c00bb1.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Faq",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -30,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -39,8 +39,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,hyperlink,strong,em,preformatted,list-item,o-list-item,embed"
+            "multi": "paragraph,hyperlink,strong,em,preformatted,list-item,o-list-item,embed",
+            "allowTargetBlank": true
           }
         },
         "faq": {
@@ -54,8 +54,8 @@
                 "config": {
                   "label": "Question",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "answer": {
@@ -63,8 +63,8 @@
                 "config": {
                   "label": "Answer",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "paragraph,preformatted,embed,hyperlink,strong,em"
+                  "multi": "paragraph,preformatted,embed,hyperlink,strong,em",
+                  "allowTargetBlank": true
                 }
               }
             }
@@ -78,28 +78,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "threeColumns",
       "name": "Three Columns",
+      "description": "Faq",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/faq/threeColumns/b3968014dcf472a72e57f78c3345d63c95ff2ab3.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Faq",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -107,8 +107,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -116,8 +116,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,hyperlink,strong,em,preformatted,list-item,o-list-item,embed"
+            "multi": "paragraph,hyperlink,strong,em,preformatted,list-item,o-list-item,embed",
+            "allowTargetBlank": true
           }
         },
         "faq": {
@@ -131,8 +131,8 @@
                 "config": {
                   "label": "Question",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "answer": {
@@ -140,8 +140,8 @@
                 "config": {
                   "label": "Answer",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "paragraph,preformatted,embed,hyperlink,strong,em"
+                  "multi": "paragraph,preformatted,embed,hyperlink,strong,em",
+                  "allowTargetBlank": true
                 }
               }
             }
@@ -155,28 +155,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "centered",
       "name": "Centered",
+      "description": "Faq",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/faq/centered/3eb053326350d2cd5094712f539239dace0d7f7c.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Faq",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -184,8 +184,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "faq": {
@@ -199,8 +199,8 @@
                 "config": {
                   "label": "Question",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "single": "paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "answer": {
@@ -208,8 +208,8 @@
                 "config": {
                   "label": "Answer",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "paragraph,preformatted,embed,hyperlink,strong,em"
+                  "multi": "paragraph,preformatted,embed,hyperlink,strong,em",
+                  "allowTargetBlank": true
                 }
               }
             }
@@ -223,8 +223,8 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     }
-  ]
+  ],
+  "description": "Faq"
 }

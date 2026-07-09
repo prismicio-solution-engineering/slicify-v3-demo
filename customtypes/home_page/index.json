@@ -2,8 +2,6 @@
   "id": "home_page",
   "label": "Home Page",
   "repeatable": false,
-  "status": true,
-  "format": "page",
   "json": {
     "Main": {
       "slices": {
@@ -64,24 +62,25 @@
         }
       },
       "canonicalLink": {
+        "type": "Link",
         "config": {
           "label": "CanonicalLink",
           "placeholder": "",
           "select": "web",
           "allowTargetBlank": false
-        },
-        "type": "Link"
+        }
       },
       "social_cards": {
         "type": "Group",
         "config": {
+          "label": "Social Cards - Facebook & Twitter",
           "fields": {
             "social_card_image": {
               "type": "Image",
               "config": {
+                "label": "Social Card Image",
                 "constraint": {},
-                "thumbnails": [],
-                "label": "Social Card Image"
+                "thumbnails": []
               }
             },
             "social_card_title": {
@@ -96,10 +95,11 @@
                 "label": "Social card description"
               }
             }
-          },
-          "label": "Social Cards - Facebook & Twitter"
+          }
         }
       }
     }
-  }
+  },
+  "status": true,
+  "format": "page"
 }

@@ -2,27 +2,27 @@
   "id": "features",
   "type": "SharedSlice",
   "name": "Features",
-  "description": "Features",
   "variations": [
     {
       "id": "rightSide",
       "name": "Right Side",
+      "description": "Features",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/features/rightSide/a08742f217f6270d9a4427edc9fa1ff3ca3e96ec.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Features",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -30,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2,strong,em"
+            "single": "heading2,strong,em",
+            "allowTargetBlank": true
           }
         },
         "subtitle": {
@@ -39,8 +39,8 @@
           "config": {
             "label": "Subtitle",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong,em"
+            "multi": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "features": {
@@ -54,8 +54,8 @@
                 "config": {
                   "label": "Feature Title",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph,strong,em"
+                  "single": "paragraph,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "feature_description": {
@@ -63,8 +63,8 @@
                 "config": {
                   "label": "Feature Description",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "allowTargetBlank": true
                 }
               },
               "feature_screenshot": {
@@ -95,28 +95,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "leftSide",
       "name": "Left Side",
+      "description": "Features",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/features/leftSide/679717d20560f3b1922fb4b010de28987252c692.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Features",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -124,8 +124,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2,strong,em"
+            "single": "heading2,strong,em",
+            "allowTargetBlank": true
           }
         },
         "subtitle": {
@@ -133,8 +133,8 @@
           "config": {
             "label": "Subtitle",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong,em"
+            "multi": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "features": {
@@ -148,8 +148,8 @@
                 "config": {
                   "label": "Feature Title",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph,strong,em"
+                  "single": "paragraph,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "feature_description": {
@@ -157,8 +157,8 @@
                 "config": {
                   "label": "Feature Description",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "allowTargetBlank": true
                 }
               },
               "feature_screenshot": {
@@ -189,28 +189,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "above",
       "name": "Above",
+      "description": "Features",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/features/above/98f488857dcb200dd804c31a829335420b9ff07f.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Features",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -218,8 +218,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2,strong,em"
+            "single": "heading2,strong,em",
+            "allowTargetBlank": true
           }
         },
         "subtitle": {
@@ -227,8 +227,8 @@
           "config": {
             "label": "Subtitle",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong,em"
+            "multi": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "features": {
@@ -242,8 +242,8 @@
                 "config": {
                   "label": "Eyebrow",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "heading3,strong,em"
+                  "single": "heading3,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "feature_title": {
@@ -251,8 +251,8 @@
                 "config": {
                   "label": "Feature Title",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph,strong,em"
+                  "single": "paragraph,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "feature_description": {
@@ -260,8 +260,8 @@
                 "config": {
                   "label": "Feature Description",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "allowTargetBlank": true
                 }
               },
               "icon": {
@@ -303,28 +303,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "below",
       "name": "Below",
+      "description": "Features",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/features/below/851965eba50b9763b1afe34b33ae1ea692b24a77.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Features",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -332,8 +332,8 @@
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2,strong,em"
+            "single": "heading2,strong,em",
+            "allowTargetBlank": true
           }
         },
         "subtitle": {
@@ -341,8 +341,8 @@
           "config": {
             "label": "Subtitle",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong,em"
+            "multi": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "features": {
@@ -356,8 +356,8 @@
                 "config": {
                   "label": "Eyebrow",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "heading3,strong,em"
+                  "single": "heading3,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "feature_title": {
@@ -365,8 +365,8 @@
                 "config": {
                   "label": "Feature Title",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph,strong,em"
+                  "single": "paragraph,strong,em",
+                  "allowTargetBlank": true
                 }
               },
               "feature_description": {
@@ -374,8 +374,8 @@
                 "config": {
                   "label": "Feature Description",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "allowTargetBlank": true
                 }
               },
               "icon": {
@@ -417,8 +417,8 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     }
-  ]
+  ],
+  "description": "Features"
 }

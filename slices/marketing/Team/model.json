@@ -2,28 +2,27 @@
   "id": "team",
   "type": "SharedSlice",
   "name": "Team",
-  "description": "Team",
   "variations": [
     {
       "id": "default",
       "name": "Default",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/team/default/6d1a92889489c3a5070d57ee5cdb9547e083573d.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -31,8 +30,8 @@
           "config": {
             "label": "Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -40,8 +39,8 @@
           "config": {
             "label": "Description",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong,em,hyperlink"
+            "multi": "paragraph,strong,em,hyperlink",
+            "allowTargetBlank": true
           }
         },
         "board_group_label": {
@@ -129,5 +128,6 @@
       },
       "items": {}
     }
-  ]
+  ],
+  "description": "Team"
 }

@@ -2,27 +2,27 @@
   "id": "form",
   "type": "SharedSlice",
   "name": "Form",
-  "description": "Form",
   "variations": [
     {
       "id": "simple",
       "name": "Simple",
+      "description": "Form",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/form/simple/bd67701dee3341301d6c08541992455c989c68a3.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Form",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "description": {
@@ -30,8 +30,8 @@
           "config": {
             "label": "Description",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "multi": "heading2,paragraph,strong,em"
+            "multi": "heading2,paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "placeholder": {
@@ -53,8 +53,8 @@
           "config": {
             "label": "Disclaimer",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,hyperlink,strong,em"
+            "single": "paragraph,hyperlink,strong,em",
+            "allowTargetBlank": true
           }
         },
         "anchor": {
@@ -65,28 +65,28 @@
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     },
     {
       "id": "withDetails",
       "name": "With Details",
+      "description": "Form",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/form/withDetails/b3a8849cfc1838810a674285c51ce85bd9ce88d3.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Form",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -94,8 +94,8 @@
           "config": {
             "label": "Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2,strong,em"
+            "single": "heading2,strong,em",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -103,8 +103,8 @@
           "config": {
             "label": "Description",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong,em"
+            "multi": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "placeholder": {
@@ -126,8 +126,8 @@
           "config": {
             "label": "Disclaimer",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,hyperlink,strong,em"
+            "single": "paragraph,hyperlink,strong,em",
+            "allowTargetBlank": true
           }
         },
         "content": {
@@ -152,8 +152,8 @@
                 "config": {
                   "label": "Title",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "strong,em,paragraph"
+                  "single": "strong,em,paragraph",
+                  "allowTargetBlank": true
                 }
               },
               "description": {
@@ -161,8 +161,8 @@
                 "config": {
                   "label": "Description",
                   "placeholder": "",
-                  "allowTargetBlank": true,
-                  "single": "paragraph,strong,em"
+                  "single": "paragraph,strong,em",
+                  "allowTargetBlank": true
                 }
               }
             }
@@ -176,28 +176,28 @@
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
       "items": {}
     },
     {
       "id": "centered",
       "name": "Centered",
+      "description": "Form",
+      "imageUrl": "https://images.prismic.io/slicify-v3-template/shared-slices/form/centered/1ac950c14b376b0fd1d2c81026761654810f4523.png?auto=compress%2Cformat",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Form",
       "primary": {
         "theme": {
           "type": "Select",
           "config": {
             "label": "Theme",
             "placeholder": "",
+            "default_value": "White",
             "options": [
               "White",
               "Dark",
               "Light",
               "Blue"
-            ],
-            "default_value": "White"
+            ]
           }
         },
         "title": {
@@ -205,8 +205,8 @@
           "config": {
             "label": "Title",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "strong,em,heading2"
+            "single": "strong,em,heading2",
+            "allowTargetBlank": true
           }
         },
         "description": {
@@ -214,8 +214,8 @@
           "config": {
             "label": "Description",
             "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "multi": "paragraph,strong,em"
+            "multi": "paragraph,strong,em",
+            "allowTargetBlank": true
           }
         },
         "placeholder": {
@@ -237,8 +237,8 @@
           "config": {
             "label": "Disclaimer",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em,hyperlink"
+            "single": "paragraph,strong,em,hyperlink",
+            "allowTargetBlank": true
           }
         },
         "anchor": {
@@ -249,8 +249,8 @@
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     }
-  ]
+  ],
+  "description": "Form"
 }
