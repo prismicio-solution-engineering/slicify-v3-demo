@@ -6,20 +6,27 @@
   ],
   "routes": [
     {
-      "type": "blog_article",
-      "path": "/blog-article/:uid"
+      "type": "home_page",
+      "path": "/:lang/"
     },
     {
       "type": "blog_index",
-      "path": "/blog-index"
+      "path": "/:lang/blog"
     },
     {
-      "type": "home_page",
-      "path": "/home-page"
+      "type": "blog_article",
+      "path": "/:lang/blog/:category?/:uid",
+      "resolvers": {
+        "category": "category"
+      }
     },
     {
       "type": "landing_page",
-      "path": "/landing-page/:uid"
+      "path": "/:lang/lp/:uid"
+    },
+    {
+      "type": "search",
+      "path": "/:lang/search"
     }
   ]
 }

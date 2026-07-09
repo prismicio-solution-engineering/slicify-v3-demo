@@ -1,4 +1,129 @@
 {
+  "text": {
+    "total": 6,
+    "variations": {
+      "default": {
+        "count": 6,
+        "usages": [
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          }
+        ]
+      }
+    }
+  },
+  "highlighted_text": {
+    "total": 3,
+    "variations": {
+      "information": {
+        "count": 3,
+        "usages": [
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          }
+        ]
+      }
+    }
+  },
+  "form": {
+    "total": 4,
+    "variations": {
+      "simple": {
+        "count": 3,
+        "usages": [
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          }
+        ]
+      },
+      "withDetails": {
+        "count": 1,
+        "usages": [
+          {
+            "id": "ZpTvRxMAACIAAxYT",
+            "uid": "exclusive-access-june-2023",
+            "type": "landing_page"
+          }
+        ]
+      }
+    }
+  },
+  "article_list": {
+    "total": 3,
+    "variations": {
+      "horizontalList": {
+        "count": 3,
+        "usages": [
+          {
+            "id": "ZpTvUhMAACIAAxY0",
+            "uid": "the-slice-principle",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvRBMAACAAAxYL",
+            "uid": "the-3rd-article",
+            "type": "blog_article"
+          },
+          {
+            "id": "ZpTvTBMAACIAAxYm",
+            "uid": "what-is-this-project",
+            "type": "blog_article"
+          }
+        ]
+      }
+    }
+  },
   "features": {
     "total": 3,
     "variations": {
@@ -28,41 +153,6 @@
           {
             "id": "ZpTvVRMAACIAAxY8",
             "type": "home_page"
-          }
-        ]
-      }
-    }
-  },
-  "form": {
-    "total": 4,
-    "variations": {
-      "withDetails": {
-        "count": 1,
-        "usages": [
-          {
-            "id": "ZpTvRxMAACIAAxYT",
-            "uid": "exclusive-access-june-2023",
-            "type": "landing_page"
-          }
-        ]
-      },
-      "simple": {
-        "count": 3,
-        "usages": [
-          {
-            "id": "ZpTvUhMAACIAAxY0",
-            "uid": "the-slice-principle",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvRBMAACAAAxYL",
-            "uid": "the-3rd-article",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvTBMAACIAAxYm",
-            "uid": "what-is-this-project",
-            "type": "blog_article"
           }
         ]
       }
@@ -210,96 +300,6 @@
           {
             "id": "ZpTvVRMAACIAAxY8",
             "type": "home_page"
-          }
-        ]
-      }
-    }
-  },
-  "text": {
-    "total": 6,
-    "variations": {
-      "default": {
-        "count": 6,
-        "usages": [
-          {
-            "id": "ZpTvUhMAACIAAxY0",
-            "uid": "the-slice-principle",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvUhMAACIAAxY0",
-            "uid": "the-slice-principle",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvRBMAACAAAxYL",
-            "uid": "the-3rd-article",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvRBMAACAAAxYL",
-            "uid": "the-3rd-article",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvTBMAACIAAxYm",
-            "uid": "what-is-this-project",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvTBMAACIAAxYm",
-            "uid": "what-is-this-project",
-            "type": "blog_article"
-          }
-        ]
-      }
-    }
-  },
-  "highlighted_text": {
-    "total": 3,
-    "variations": {
-      "information": {
-        "count": 3,
-        "usages": [
-          {
-            "id": "ZpTvUhMAACIAAxY0",
-            "uid": "the-slice-principle",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvRBMAACAAAxYL",
-            "uid": "the-3rd-article",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvTBMAACIAAxYm",
-            "uid": "what-is-this-project",
-            "type": "blog_article"
-          }
-        ]
-      }
-    }
-  },
-  "article_list": {
-    "total": 3,
-    "variations": {
-      "horizontalList": {
-        "count": 3,
-        "usages": [
-          {
-            "id": "ZpTvUhMAACIAAxY0",
-            "uid": "the-slice-principle",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvRBMAACAAAxYL",
-            "uid": "the-3rd-article",
-            "type": "blog_article"
-          },
-          {
-            "id": "ZpTvTBMAACIAAxYm",
-            "uid": "what-is-this-project",
-            "type": "blog_article"
           }
         ]
       }

@@ -35,7 +35,7 @@ export default async function SliceLibraryPage() {
 async function loadSliceLibraries(): Promise<SliceLibrary[]> {
   try {
     const file = await fs.readFile(
-      process.cwd() + "/slicemachine.config.json",
+      process.cwd() + "/prismic.config.json",
       "utf8"
     );
 
@@ -47,7 +47,7 @@ async function loadSliceLibraries(): Promise<SliceLibrary[]> {
   } catch (error) {
     console.error(error);
     throw new Error(
-      "Issue when reading local slice libraries listed in slicemachine.config.json"
+      "Issue when reading local slice libraries listed in prismic.config.json"
     );
   }
 }

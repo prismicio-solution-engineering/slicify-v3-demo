@@ -1,6 +1,5 @@
 import "dotenv/config";
 import * as prismic from "@prismicio/client";
-import { repositoryName } from "@/slicemachine.config.json";
 import { AllDocumentTypes } from "@/prismicio-types";
 
 // List of pages to update

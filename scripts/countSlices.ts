@@ -1,5 +1,6 @@
 import * as PrismicClient from "@prismicio/client";
 import models from "@/artifacts/sliceIndex.json";
+import { repositoryName } from "@/prismic.config.json";
 import path from "path";
 import fsp from "fs/promises";
 
@@ -74,7 +75,7 @@ interface TransformResult {
 }
 
 // Initialize Prismic client
-const prismic = PrismicClient.createClient("slicify-v3-template"
+const prismic = PrismicClient.createClient(repositoryName
     // Add access token if your Prismic repository requires it
     // ,{accessToken: process.env.NEXT_PUBLIC_PRISMIC_REPO_TOKEN}
 );

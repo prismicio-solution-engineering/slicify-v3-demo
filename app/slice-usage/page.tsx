@@ -12,7 +12,7 @@ import {
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState, useEffect, useMemo } from "react";
-import sm from "@/slicemachine.config.json";
+import sm from "@/prismic.config.json";
 
 interface SliceVariation {
   name: string;
